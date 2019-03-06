@@ -1,0 +1,297 @@
+$dark_primary_color: #fff;
+$dark_primary_bg: #1b1b1b;
+$dark_link_color: #ff8400;
+$dark_link_hover: #da6565;
+$dark_deep_color: #000;
+$dark_button_bg: #222;
+
+
+body.dark_skin{
+
+	/*============================================================================
+	------------------------------ Reset Dark Skin ------------------------------
+	============================================================================*/
+
+	background:#222;
+	a{
+		color:$dark_link_color;
+			&:hover{
+				color:dark_link_hover;
+			}
+	}
+
+	button, input[type="button"], input[type="reset"], input[type="submit"]{
+			background:$dark_button_bg;
+	}
+
+	h1, h2, .blog-box .widget-title, h3, h4, h5, h6{
+		color:$dark_primary_color;
+	}
+
+	/*============================================================================
+	------------------------------ Header Section ------------------------------
+	============================================================================*/
+
+	.top-header{
+		background:$dark_primary_bg;
+		.breaking-news-title{
+			background: #a14242;
+		}
+	}
+
+	.mobile-sidebar{
+		background-color:$dark_primary_bg;
+		.main-navigation{
+			ul{
+				background-color:transparent;
+			}
+			a{
+				color:#fff;
+			}
+			li:hover{
+				a{
+					background:transparent;
+				}
+			}
+			.dropdown-toggle{
+				color:#fff;
+				background:transparent;
+				&.toggled-on, &:focus, &:hover, &:active{
+					color:#fff;
+					background:transparent;
+					&:after{
+						background:transparent;
+					}
+				}
+			}
+		}
+	}
+
+	.site-header{
+		background-color:#000;
+	}
+
+	.main-navbar{
+		background:$dark_primary_bg;
+		border-bottom-color:$dark_deep_color;
+	}
+
+	@media (min-width: 960px){
+		.main-navigation .main-menu > li.current-menu-item > a,
+		.main-navigation > ul > li > a:hover {
+		    background: $dark_link_color;
+		}
+	}
+	/*============================================================================
+	------------------------------ Reset Sidebar ------------------------------
+	============================================================================*/
+
+	.widget-title,
+	.page-title,
+	.entry-title{
+		color:#e6dbdb;
+		a{
+			color:inherit;
+		}
+	}
+
+	.widget-area{
+		ul{
+			li{
+				border-color:#b9b9b9;
+				&:before{
+					color:$dark_primary_color;
+				}
+				a{
+					color:$dark_primary_color;
+				}
+			}
+		}
+	}
+
+	.sidebar{
+		.widget-title{
+			span{
+				&:after,
+				&:before{
+					border-color:#b9b9b9;
+				}
+			}
+		}
+	}
+
+	/*============================================================================
+	------------------------------ Blog Section ------------------------------
+	============================================================================*/
+
+	.entry-summary{
+		color:#dbd1d1;
+	}
+
+	.author-info{
+		background:#222;
+		color:#fff;
+	}
+
+	.author-bio{
+		color:$dark_primary_color;
+	}
+
+	.blog-box{
+		.innerbox-wraper{
+			background-color:#999;
+		}
+	}
+	.comment-content{
+		color:$dark_primary_color;
+	}
+
+	.comment-form label,
+	.comments-title, 
+	.comment-reply-title{
+		color:$dark_primary_color;
+	}
+
+	.entry-meta .posted-on a, 
+	.entry-meta .author a{
+
+	}
+
+	.blog-box .btn-wraper {
+		box-shadow: none;
+	}
+
+	.post-wrapper article,
+	aside.sidebar .widget {
+		background: $dark_primary_bg;
+	}
+
+	.post-wrapper article:hover {
+	   box-shadow: 0 12px 24px rgba(0,0,0,0.3),
+	               0 10px 10px rgba(0,0,0,0.2);
+	}
+
+	.card {
+		color:#fff;
+		background: transparent;
+    	border: 1px solid #fff;
+
+	} 
+
+	.card-profile{
+		.card-title{
+			color:$dark_link_color;
+		}
+	}
+
+	.tags-links, .cat-links{
+		a{
+			color:$dark_primary_color;
+	    	border-color: $dark_link_color;
+	    	background:$dark_link_color;
+	    	&:hover{
+	    		border-color: $dark_link_hover;
+	    		background:$dark_link_hover;
+	    	}
+	    }
+	}
+
+	.entry-meta{
+		.posted-on a, 
+		.author a{
+			color:$dark_primary_color;
+		}
+	}
+
+	.posts-navigation .nav-previous:before {
+		border-right: none;
+	}
+
+	.content-area {
+		background: $dark_primary_bg;
+		color: $dark_primary_color;
+		margin-bottom: 30px;
+
+	}
+	.entry-footer,
+	.post-navigation {
+		border-color: #999;
+	}
+	.hentry, 
+	.no-results {
+		border-color: #999;
+	}
+	.comment-form textarea,
+	.entry-content input,
+	.entry-content textarea {
+		background: $dark_primary_color;
+	}
+	.entry-content input[type="submit"] {
+		color:#222;
+	}
+	.site-content {
+		padding: 30px 0;
+	}
+	.tags-links {
+		color: #3c3c3c;
+	}
+	.comment-list li {
+		border-color: #999;
+	}
+
+	.comment-form input[type="submit"] {
+		margin-bottom: 20px;
+		
+	}
+
+	/*============================================================================
+	------------------------------ Footer Section ------------------------------
+	============================================================================*/
+
+	.site-footer {
+		border-color:#333;
+		h3{
+			color: #f0f0f0;
+		}
+		.widget-area {
+		    background-color: #171717;
+		    border:none;
+		    ul{
+		    	li{
+		    		border-color: #333;
+		    	}
+		    }
+		    
+		}	
+		.widget{
+			a{
+				color:#ccc;
+				&:hover{
+					color:#ff8400;
+					text-decoration: none;
+				}
+			}
+			.tagcloud{
+				a, a:hover{
+					color:$dark_primary_color;
+				}
+			}
+		}
+
+		.textwidget{
+			p{
+				color: #666;
+			}
+		}
+	}
+
+	.site-info a, 
+	.site-credits {
+		color:#ccc;
+	}
+
+	.footer-copy {
+		background: $dark_primary_bg;
+	}
+
+}

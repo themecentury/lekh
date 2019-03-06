@@ -1,0 +1,46 @@
+.site-footer {
+	margin: 20px auto 0;
+	background-color: $footer_background;
+	border-top: 1px solid #eee;
+}
+
+.footer-copy {
+	clear: both;
+	padding: 15px 0;
+}
+
+.site-info,
+.site-credits {
+	font-size: 0.875rem;
+	color: #fff;
+	text-align: center;
+}
+
+.site-credits {
+	margin-bottom: 15px;
+}
+
+.site-info a {
+	color: #fff;
+}
+.parallax {
+    height: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left:-55px;
+    margin-right:-54px;
+    max-width: auto;
+        @media(max-width:720px){
+            margin-left:0px;
+            margin-right:0px;
+        }
+ 
+}
+.parallax-content { 
+    width:100%;
+    margin:0 auto;
+    color:#FFF;
+    padding-top:5px; 
+} 
