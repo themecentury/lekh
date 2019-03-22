@@ -7,7 +7,8 @@
  */
 $cat_id = absint(get_theme_mod('top_header_category', 0));
 $show_on_topbar = esc_attr(get_theme_mod('show_on_topbar', 'social'));
-if ($cat_id) {
+$enable_breaking_news = esc_attr(get_theme_mod('enable_breaking_news', 1));
+if ($enable_breaking_news) {
     ?>
     <div class="top-header category-id<?php echo absint(get_theme_mod('top_header_category', 0)); ?>">
         <div class="container">
@@ -17,8 +18,11 @@ if ($cat_id) {
                     $args = array(
                         'post_type' => 'post',
                         'posts_per_page' => 10,
-                        'cat' => $cat_id
+                        
                     );
+                    if($cat_id){
+                        $args['cat'] = $cat_id;
+                    }
                     $query = new WP_Query($args);
                     if ($query->have_posts()):
                         ?>

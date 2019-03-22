@@ -55,7 +55,7 @@ $post_sidebar_position = get_theme_mod('post_sidebar_position', 'content-sidebar
 
 <?php
 // Author bio.
-if (get_theme_mod('show_author_bio') && is_single() && get_the_author_meta('description')) {
+if (get_theme_mod('show_author_bio', 1) && is_single() && get_the_author_meta('description')) {
     get_template_part('template-parts/post/author-bio');
 }
 ?>

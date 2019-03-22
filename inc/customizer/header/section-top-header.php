@@ -28,6 +28,24 @@ $wp_customize->add_control(
 		'type'    => 'text',
 	)
 );
+
+//Top Header Category
+$wp_customize->add_setting( 
+	'enable_breaking_news', 
+	array(
+		'default'           => 1,
+		'sanitize_callback' => 'absint',
+	)
+);
+$wp_customize->add_control( 
+	'enable_breaking_news', 
+	array(
+		'label'   => esc_html__( 'Enable Breaking News', 'lekh' ),
+		'section' => 'lekh_top_header',
+		'type'    => 'checkbox'
+	)
+);
+
 //Top Header Category
 $wp_customize->add_setting( 
 	'top_header_category', 

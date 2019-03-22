@@ -47,3 +47,5 @@ require_once centurylib_file_directory('core/init.php');
 require_once centurylib_file_directory('widgets/init.php');
 
 require_once centurylib_file_directory('walkers/init.php');
+
+require_once centurylib_file_directory('installation/init.php');

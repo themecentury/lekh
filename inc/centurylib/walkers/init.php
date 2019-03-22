@@ -1,5 +1,4 @@
 <?php
 /*
- * Mega Menu Walkers
+ * All Custom Walkers Goes here
  */
-require_once centurylib_file_directory('walkers/tcy-walker-nav-mega-menu.php');

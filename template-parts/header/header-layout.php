@@ -5,7 +5,7 @@
  * @package Lekh
  * @since Lekh 1.0
  */
-$header_template = sanitize_file_name(get_theme_mod('header_layout', 'header-layout1'));
+$header_template = sanitize_file_name(get_theme_mod('header_layout', 'header-layout3'));
 ?>
 <div class="site-title-centered site-header-wrap <?php echo $header_template; ?>">
     <?php

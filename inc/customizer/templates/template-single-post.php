@@ -82,7 +82,7 @@ $wp_customize->add_control(
 $wp_customize->add_setting( 
 	'show_author_bio',
 	array(
-		'default'           => '',
+		'default'           => 1,
 		'sanitize_callback' => 'lekh_sanitize_checkbox',
 	) 
 );
