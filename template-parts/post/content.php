@@ -7,12 +7,10 @@
  * @package Lekh
  * @since Lekh 1.0
  */
-
 // Sidebar Options
 $blog_sidebar_position = get_theme_mod('blog_sidebar_position', 'content-sidebar');
 $archive_sidebar_position = get_theme_mod('archive_sidebar_position', 'content-sidebar');
 ?>
-
 <article id="post-<?php the_ID(); ?>" <?php post_class('large-post'); ?>>
 
 	<div class="entry-header">
@@ -28,12 +26,6 @@ $archive_sidebar_position = get_theme_mod('archive_sidebar_position', 'content-s
 		<h2 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 	</div><!-- .entry-header -->
 	<?php if ( has_post_thumbnail() ) : 
- 		/**
-    	* Image animation on hover
-    	* @package ThemeCentury
-    	* @subpackage Lekh 
-    	* @since 1.1.2
-    	*/ 
 		?>
 		<?php $hoverEffect = get_theme_mod('lekh_image_animation_on_hover'); ?>
 		<figure class="entry-thumbnail <?php if($hoverEffect) {echo 'hovereffect';} else{echo '';} ?>">

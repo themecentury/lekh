@@ -7,18 +7,9 @@
  * @package Lekh
  * @since Lekh 1.0
  */
-
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class('list-post'); ?>>
-
-	<?php if ( has_post_thumbnail() ) { 
- 		/**
-    	* Image animation on hover
-    	* @package ThemeCentury
-    	* @subpackage Lekh 
-    	* @since 1.1.2
-    	*/  
-		?>
+	<?php if ( has_post_thumbnail() ) { ?>
 		<?php $hoverEffect = get_theme_mod('lekh_image_animation_on_hover'); ?>
 		<figure class="entry-thumbnail <?php if($hoverEffect) {echo 'hovereffect';} else{echo '';} ?>">
 			<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">

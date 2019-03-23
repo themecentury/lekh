@@ -9,7 +9,6 @@
  */
 
 ?>
-
 <article id="post-<?php the_ID(); ?>" <?php post_class('grid-post'); ?>>
 
 	<?php if ( has_post_thumbnail() ) { 

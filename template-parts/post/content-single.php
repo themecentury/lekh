@@ -10,7 +10,6 @@
 // Sidebar Options
 $post_sidebar_position = get_theme_mod('post_sidebar_position', 'content-sidebar');
 ?>
-
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
     <?php if (get_theme_mod('post_style', 'fimg-classic') == 'fimg-classic') : ?>	
