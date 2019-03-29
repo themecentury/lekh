@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: themecentury@gmail.com\n"
-"POT-Creation-Date: 2019-03-29 17:05:40+00:00\n"
+"POT-Creation-Date: 2019-03-29 19:04:17+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -780,8 +780,8 @@ msgid "Settings for footer bottom section."
 msgstr ""
 
 #: inc/customizer/footer/section-info-footer.php:19
-#: inc/functions/functions.php:206
-msgid "© 2019 Best blog in 21st Century"
+#: inc/functions/functions.php:209
+msgid "&copy; 2019 Best blog in 21st Century"
 msgstr ""
 
 #: inc/customizer/footer/section-info-footer.php:27
@@ -1140,23 +1140,23 @@ msgstr ""
 msgid "Display Author Bio"
 msgstr ""
 
-#: inc/functions/functions.php:67
+#: inc/functions/functions.php:70
 msgid "Home"
 msgstr ""
 
-#: inc/functions/functions.php:68
+#: inc/functions/functions.php:71
 msgid "Demo"
 msgstr ""
 
-#: inc/functions/functions.php:69
+#: inc/functions/functions.php:72
 msgid "Docs"
 msgstr ""
 
-#: inc/functions/functions.php:70
+#: inc/functions/functions.php:73
 msgid "Support Forum"
 msgstr ""
 
-#: inc/functions/functions.php:331 inc/functions/functions.php:374
+#: inc/functions/functions.php:334 inc/functions/functions.php:377
 msgid "Select Category"
 msgstr ""
 

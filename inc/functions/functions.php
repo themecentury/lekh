@@ -60,14 +60,17 @@ endif;
  * // Set the default content width.
  *
  */
+
 function lekh_fallback_menu() {
     $home_url = esc_url(home_url('/'));
+    $main_site_url = 'themecentury.com/';
+    $protocal_type = 'https://';
     ?>
     <ul class="main-menu">
         <li><a href="<?php echo esc_url($home_url); ?>" rel="home"><?php esc_html_e( 'Home', 'lekh' ); ?></a></li>
-        <li><a href="https://demo.themecentury.com/wpthemes/lekh/" target="_blank" rel="demo"><?php esc_html_e( 'Demo', 'lekh' ); ?></a></li>
-        <li><a href="https://docs.themecentury.com/" target="_blank" rel="docs"><?php esc_html_e( 'Docs', 'lekh' ); ?></a></li>
-        <li><a href="https://themecentury.com/forums/forum/lekh-free-wordpress-theme/" target="_blank" rel="docs"><?php esc_html_e( 'Support Forum', 'lekh' ); ?></a></li>
+        <li><a href="<?php echo esc_url($protocal_type.'demo.'.$main_site_url.'wpthemes/lekh/'); ?>" target="_blank" rel="demo"><?php esc_html_e( 'Demo', 'lekh' ); ?></a></li>
+        <li><a href="<?php echo esc_url($protocal_type.'docs.'.$main_site_url); ?>" target="_blank" rel="docs"><?php esc_html_e( 'Docs', 'lekh' ); ?></a></li>
+        <li><a href="<?php echo esc_url($protocal_type.$main_site_url.'forums/forum/lekh-free-wordpress-theme'); ?>" target="_blank" rel="docs"><?php esc_html_e( 'Support Forum', 'lekh' ); ?></a></li>
     </ul>
     <?php
 }
@@ -203,7 +206,7 @@ function lekh_custom_logo() {
  * Prints Credits in the Footer
  */
 function lekh_credits() {
-    $copyright_text = get_theme_mod( 'lekh_copyright_text', esc_html__('© 2019 Best blog in 21st Century', 'lekh') );
+    $copyright_text = get_theme_mod( 'lekh_copyright_text', esc_html__('&copy; 2019 Best blog in 21st Century', 'lekh') );
     echo wp_kses_post($copyright_text);
 }
 

@@ -16,7 +16,7 @@ $wp_customize->add_section(
 $wp_customize->add_setting(
   'lekh_copyright_text', 
   array(
-    'default' => esc_html__('© 2019 Best blog in 21st Century', 'lekh'),
+    'default' => esc_html__('&copy; 2019 Best blog in 21st Century', 'lekh'),
     'sanitize_callback' => 'sanitize_text_field',
   ) 
 );
