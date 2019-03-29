@@ -44,15 +44,18 @@ Lekh theme is translation ready.
 4. https://pxhere.com/en/photo/1433039 - License CC0 Public Domain
 
 == Licenses ==
-
 https://github.com/FortAwesome/Font-Awesome - MIT License
 https://github.com/OwlCarousel2/OwlCarousel2 - MIT License
 https://github.com/pixelcog/parallax.js - MIT License
 
 == Changelog ==
 
-= 1.0.2 - 2019/03/29 =
-    * Fixed: Readme file issue fixed
+= 1.0.2 - 2019/03/30 =
+    * Fixed: Fixed Theme Name Issues
+    * Fixed: WordPress Capital Letter Issue Fixed
+    * Remove: Remove Single - Gallery File
+    * Added: General and Image Settings added
+    * Optimized: Search Form and Menu Search Icons Design Optimized
 
 = 1.0.1 - 2019/03/22 =
     * Fixed: Readme file issue fixed
@@ -62,7 +65,15 @@ https://github.com/pixelcog/parallax.js - MIT License
 
 == Upgrade Notice ==
 
+= 1.0.2 - 2019/03/30 =
+    * Fixed: Fixed Theme Name Issues
+    * Fixed: WordPress Capital Letter Issue Fixed
+    * Remove: Remove Single - Gallery File
+    * Added: General and Image Settings added
+    * Optimized: Search Form and Menu Search Icons Design Optimized
+
 = 1.0.1 =
 *  Fixed: Readme file issue fixed.
+
 = 1.0.0 = 
 *  Initial Release
