@@ -4,8 +4,8 @@ Contributors:       themecentury
 Requires at least:  WordPress 4.0
 Tested up to:       WordPress 5.1.1
 Requires PHP:       5.3
-Version:            1.0.1
-Stable tag:         1.0.1
+Version:            1.0.2
+Stable tag:         1.0.2
 License:            GPLv3 or later
 License URI:        http://www.gnu.org/licenses/gpl-3.0.html
 Tags:               grid-layout, one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header,  custom-logo, custom-menu, editor-style, featured-images, footer-widgets, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, blog, education, news
@@ -50,6 +50,9 @@ https://github.com/OwlCarousel2/OwlCarousel2 - MIT License
 https://github.com/pixelcog/parallax.js - MIT License
 
 == Changelog ==
+
+= 1.0.2 - 2019/03/29 =
+    * Fixed: Readme file issue fixed
 
 = 1.0.1 - 2019/03/22 =
     * Fixed: Readme file issue fixed
