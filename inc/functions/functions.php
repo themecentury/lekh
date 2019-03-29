@@ -62,7 +62,14 @@ endif;
  */
 function lekh_fallback_menu() {
     $home_url = esc_url(home_url('/'));
-    echo '<ul class="main-menu"><li><a href="' . esc_url($home_url) . '" rel="home">' . esc_html__('Home', 'lekh') . '</a></li></ul>';
+    ?>
+    <ul class="main-menu">
+        <li><a href="<?php echo esc_url($home_url); ?>" rel="home"><?php esc_html_e( 'Home', 'lekh' ); ?></a></li>
+        <li><a href="https://demo.themecentury.com/wpthemes/lekh/" target="_blank" rel="demo"><?php esc_html_e( 'Demo', 'lekh' ); ?></a></li>
+        <li><a href="https://docs.themecentury.com/" target="_blank" rel="docs"><?php esc_html_e( 'Docs', 'lekh' ); ?></a></li>
+        <li><a href="https://themecentury.com/forums/forum/lekh-free-wordpress-theme/" target="_blank" rel="docs"><?php esc_html_e( 'Support Forum', 'lekh' ); ?></a></li>
+    </ul>
+    <?php
 }
 
 /**

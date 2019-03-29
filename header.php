@@ -23,11 +23,11 @@
 </head>
 <body <?php body_class(); ?>>
 	<?php $website_layout = lekh_website_layout(); ?>
-	<div id="page" class="site <?php echo esc_attr($website_layout); ?>-layout">
+	<div id="page" class="site lekh-main-wrapper <?php echo esc_attr($website_layout); ?>-layout">
 		<?php 
 		$backtotop = get_theme_mod('back_to_top_button');
 		if($backtotop){ ?>
-			<button onclick="topFunction()" id="button_to_top" title="<?php esc_html_e('Go to top', 'lekh'); ?>"><i class="fa fa-angle-up"></i></button><?php 
+			<button id="button_to_top" title="<?php esc_html_e('Go to top', 'lekh'); ?>"><i class="fa fa-angle-up"></i></button><?php 
 		} ?>
 		<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'lekh' ); ?></a>
 		<?php
@@ -39,10 +39,7 @@
 		?>
 		<header id="masthead" class="site-header <?php echo (get_header_image()) ? ' has-header-image ' : ''; echo esc_attr($header_class); ?>" role="banner">
 			<?php get_template_part( 'template-parts/header/header', 'layout' ); ?>
-
-
 		</header><!-- #masthead -->
-
 		<div id="content" class="site-content">
 			<div class="container">
 				<div class="inside">

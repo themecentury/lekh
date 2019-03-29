@@ -1,6 +1,6 @@
 <div class="mobile-navbar clear">
     <a id="menu-toggle" class="menu-toggle" href="#mobile-navigation" title="<?php esc_attr_e('Menu', 'lekh'); ?>"><span class="button-toggle"></span></a>
-    <?php if (get_theme_mod('show_header_search', 1)) { ?>
+    <?php if (get_theme_mod('show_searchform_onmenu', 1)) { ?>
         <div class="top-search">
             <span id="top-search-button" class="top-search-button"><i class="search-icon"></i></span>
             <?php get_search_form(); ?>

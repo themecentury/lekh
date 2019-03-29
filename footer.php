@@ -9,12 +9,10 @@
  * @package Lekh
  * @since Lekh 1.0
  */
-
 ?>
 </div><!-- .inside -->
 </div><!-- .container -->
 </div><!-- #content -->
-
 <footer id="colophon" class="site-footer" role="contentinfo">
 	<?php
 	$parallax_footer = get_theme_mod('lekh_parallax_footer');
@@ -50,7 +48,6 @@
 			</div><!-- .container -->
 		</div><!-- .widget-area -->
 	<?php endif; ?>
-
 	<div class="footer-copy">
 		<div class="container">
 			<div class="row">
@@ -72,9 +69,7 @@ if($parallax_footer){ ?>
 	} ?>
 </footer><!-- #colophon -->
 </div><!-- #page -->
-
 <?php wp_footer(); ?>
-
 </body>
 </html>
 

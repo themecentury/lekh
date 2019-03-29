@@ -17,6 +17,10 @@
 
             },
 
+            ScrollToTop: function(){
+                jQuery("html, body").animate({scrollTop: 0}, "slow");
+            },
+
             Gototop: function(){
                 if (scrollTop > 20) {
                     $('#button_to_top').css('display', 'block');
@@ -27,8 +31,17 @@
 
         },
 
+        Events: function(){
+
+        },
+
         Ready: function(){
             
+            var __this = lekh;
+            var snipits = __this.snipits;
+
+            var go_to_top = snipits.ScrollToTop;
+            $('#button_to_top').on('click', go_to_top);
 
         },
 

@@ -1,42 +1,45 @@
-.site-footer {
+.site-footer{
 	margin: 20px auto 0;
-	background-color: $footer_background;
 	border-top: 1px solid #eee;
+    background-color: $footer_background;
 }
-
-.footer-copy {
+.footer-copy{
 	clear: both;
 	padding: 15px 0;
 }
-
-.site-info,
-.site-credits {
-	font-size: 0.875rem;
+.site-info{
 	color: #fff;
 	text-align: center;
+    font-size: 0.875rem;
 }
-
-.site-credits {
+.site-credits{
+    color: #fff;
+    text-align: center;
 	margin-bottom: 15px;
+    font-size: 0.875rem;
 }
-
-.site-info a {
-	color: #fff;
+.site-info{
+    a{
+        color: #fff;
+    }
 }
-.parallax {
+.parallax{
     height: 100%; 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    max-width: auto;
     margin-left:-55px;
     margin-right:-54px;
-    max-width: auto;
-        @media(max-width:720px){
-            margin-left:0px;
-            margin-right:0px;
-        }
- 
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;   
+    @media(max-width:720px){
+        margin-left:0px;
+        margin-right:0px;
+    }
+    @media(max-width:1340px){
+        margin-left:0px;
+        margin-right:0px;
+    }
 }
 .parallax-content { 
     width:100%;

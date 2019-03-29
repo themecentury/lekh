@@ -10,11 +10,11 @@ class Lekh_Important_Links extends WP_Customize_Control {
 		$important_links = array(
 
 			'theme-info'    => array(
-				'link' => esc_url( 'https://themecentury.com/downloads/lekh/' ),
+				'link' => esc_url( 'https://themecentury.com/downloads/lekh-free-wordpress-theme/' ),
 				'text' => esc_html__( 'Theme Info', 'lekh' ),
 			),
 			'support'       => array(
-				'link' => esc_url( 'https://themecentury.com/forums/' ),
+				'link' => esc_url( 'https://themecentury.com/forums/forum/lekh-free-wordpress-theme/' ),
 				'text' => esc_html__( 'Support', 'lekh' ),
 			),
 			'demo'          => array(

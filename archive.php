@@ -8,9 +8,7 @@
  * @since Lekh 1.0
  */
 get_header();
-?>
 
-<?php
 /* Archive Options */
 $archive_layout = get_theme_mod('archive_layout', 'list');
 $archive_sidebar_position = get_theme_mod('archive_sidebar_position', 'content-sidebar');
@@ -34,22 +32,22 @@ $post_column = lekh_archive_column();
                 echo esc_attr('flex-row');
             }
             ?>">
-                         <?php
-                         /* Start the Loop */
-                         while (have_posts()) : the_post();
-                             ?>
-                    <div class="post-wrapper <?php echo esc_attr($post_column); ?>">
-                        <?php get_template_part('template-parts/post/content', $post_template); ?>
-                    </div>
-                <?php endwhile; ?>
-            </section>
             <?php
-            the_posts_navigation();
-        else :
-            get_template_part('template-parts/post/content', 'none');
-        endif;
-        ?>
-    </main><!-- #main -->
+            /* Start the Loop */
+            while (have_posts()) : the_post();
+               ?>
+               <div class="post-wrapper <?php echo esc_attr($post_column); ?>">
+                <?php get_template_part('template-parts/post/content', $post_template); ?>
+            </div>
+        <?php endwhile; ?>
+    </section>
+    <?php
+    the_posts_navigation();
+else :
+    get_template_part('template-parts/post/content', 'none');
+endif;
+?>
+</main><!-- #main -->
 </div><!-- #primary -->
 <?php
 // Sidebar
