@@ -34,7 +34,7 @@ Lekh theme is translation ready.
 
 = Does the theme is translation ready? =
 
-* Yes, this theme is translation ready. You can use any wordpress language translation plugin.
+* Yes, this theme is translation ready. You can use any WordPress language translation plugin.
 
 == Screenshots ==
 
