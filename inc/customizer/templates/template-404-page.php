@@ -60,7 +60,7 @@ $wp_customize->add_control(
 $wp_customize->add_setting( 
 	'lekh_404_page_title', 
 	array(
-		'default'           => esc_html__( 'Oops! That page can’t be found.', 'lekh' ),
+		'default'           => esc_html__( 'Oops! That page cant be found.', 'lekh' ),
 		'sanitize_callback' => 'esc_attr',
 	)
 );

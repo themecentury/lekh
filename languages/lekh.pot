@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: themecentury@gmail.com\n"
-"POT-Creation-Date: 2019-07-04 09:45:26+00:00\n"
+"POT-Creation-Date: 2019-07-04 12:46:26+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -242,35 +242,35 @@ msgid "Change Icon"
 msgstr ""
 
 #: inc/centurylib/installation/class-tgm-plugin-activation.php:327
-#: inc/hooks/recommend.php:81
+#: inc/hooks/recommend.php:88
 msgid "Install Required Plugins"
 msgstr ""
 
 #: inc/centurylib/installation/class-tgm-plugin-activation.php:328
-#: inc/hooks/recommend.php:82
+#: inc/hooks/recommend.php:89
 msgid "Install Plugins"
 msgstr ""
 
 #: inc/centurylib/installation/class-tgm-plugin-activation.php:330
-#: inc/hooks/recommend.php:83
+#: inc/hooks/recommend.php:90
 #. translators: %s: plugin name.
 msgid "Installing Plugin: %s"
 msgstr ""
 
 #: inc/centurylib/installation/class-tgm-plugin-activation.php:332
-#: inc/hooks/recommend.php:84
+#: inc/hooks/recommend.php:91
 #. translators: %s: plugin name.
 msgid "Updating Plugin: %s"
 msgstr ""
 
 #: inc/centurylib/installation/class-tgm-plugin-activation.php:333
-#: inc/hooks/recommend.php:85
+#: inc/hooks/recommend.php:92
 #. translators: %s: plugin name.
 msgid "Something went wrong with the plugin API."
 msgstr ""
 
 #: inc/centurylib/installation/class-tgm-plugin-activation.php:370
-#: inc/hooks/recommend.php:116
+#: inc/hooks/recommend.php:123
 #. translators: 1: plugin name(s).
 msgid "Begin installing plugin"
 msgid_plural "Begin installing plugins"
@@ -278,21 +278,21 @@ msgstr[0] ""
 msgstr[1] ""
 
 #: inc/centurylib/installation/class-tgm-plugin-activation.php:375
-#: inc/hooks/recommend.php:121
+#: inc/hooks/recommend.php:128
 msgid "Begin updating plugin"
 msgid_plural "Begin updating plugins"
 msgstr[0] ""
 msgstr[1] ""
 
 #: inc/centurylib/installation/class-tgm-plugin-activation.php:380
-#: inc/hooks/recommend.php:126
+#: inc/hooks/recommend.php:133
 msgid "Begin activating plugin"
 msgid_plural "Begin activating plugins"
 msgstr[0] ""
 msgstr[1] ""
 
 #: inc/centurylib/installation/class-tgm-plugin-activation.php:385
-#: inc/hooks/recommend.php:131
+#: inc/hooks/recommend.php:138
 msgid "Return to Required Plugins Installer"
 msgstr ""
 
@@ -305,24 +305,24 @@ msgstr ""
 
 #: inc/centurylib/installation/class-tgm-plugin-activation.php:387
 #: inc/centurylib/installation/class-tgm-plugin-activation.php:3159
-#: inc/hooks/recommend.php:132
+#: inc/hooks/recommend.php:139
 msgid "Plugin activated successfully."
 msgstr ""
 
 #: inc/centurylib/installation/class-tgm-plugin-activation.php:388
 #: inc/centurylib/installation/class-tgm-plugin-activation.php:2952
-#: inc/hooks/recommend.php:133
+#: inc/hooks/recommend.php:140
 msgid "The following plugin was activated successfully:"
 msgstr ""
 
 #: inc/centurylib/installation/class-tgm-plugin-activation.php:390
-#: inc/hooks/recommend.php:134
+#: inc/hooks/recommend.php:141
 #. translators: 1: plugin name.
 msgid "No action taken. Plugin %1$s was already active."
 msgstr ""
 
 #: inc/centurylib/installation/class-tgm-plugin-activation.php:392
-#: inc/hooks/recommend.php:135
+#: inc/hooks/recommend.php:142
 #. translators: 1: plugin name.
 msgid ""
 "Plugin not activated. A higher version of %s is needed for this theme. "
@@ -330,25 +330,25 @@ msgid ""
 msgstr ""
 
 #: inc/centurylib/installation/class-tgm-plugin-activation.php:394
-#: inc/hooks/recommend.php:136
+#: inc/hooks/recommend.php:143
 #. translators: 1: dashboard link.
 msgid "All plugins installed and activated successfully. %1$s"
 msgstr ""
 
 #: inc/centurylib/installation/class-tgm-plugin-activation.php:395
-#: inc/hooks/recommend.php:137
+#: inc/hooks/recommend.php:144
 msgid "Dismiss this notice"
 msgstr ""
 
 #: inc/centurylib/installation/class-tgm-plugin-activation.php:396
-#: inc/hooks/recommend.php:138
+#: inc/hooks/recommend.php:145
 msgid ""
 "There are one or more required or recommended plugins to install, update or "
 "activate."
 msgstr ""
 
 #: inc/centurylib/installation/class-tgm-plugin-activation.php:397
-#: inc/hooks/recommend.php:139
+#: inc/hooks/recommend.php:146
 msgid "Please contact the administrator of this site for help."
 msgstr ""
 
@@ -780,8 +780,7 @@ msgid "Settings for footer bottom section."
 msgstr ""
 
 #: inc/customizer/footer/section-info-footer.php:19
-#: inc/functions/functions.php:236
-msgid "&copy; 2019 Best blog in 21st Century"
+msgid "Copyright 2019 Best blog in 21st Century"
 msgstr ""
 
 #: inc/customizer/footer/section-info-footer.php:27
@@ -1094,7 +1093,7 @@ msgid "No Sidebar Full width"
 msgstr ""
 
 #: inc/customizer/templates/template-404-page.php:63
-msgid "Oops! That page can’t be found."
+msgid "Oops! That page cant be found."
 msgstr ""
 
 #: inc/customizer/templates/template-404-page.php:71
@@ -1239,6 +1238,10 @@ msgstr ""
 msgid "Support Forum"
 msgstr ""
 
+#: inc/functions/functions.php:236
+msgid "&copy; 2019 Best blog in 21st Century"
+msgstr ""
+
 #: inc/functions/functions.php:361 inc/functions/functions.php:404
 msgid "Select Category"
 msgstr ""
@@ -1267,26 +1270,30 @@ msgid "Edit %s"
 msgstr ""
 
 #: inc/hooks/recommend.php:46
-msgid "Contact Form 7"
-msgstr ""
-
-#: inc/hooks/recommend.php:53
 msgid "Century ToolKit"
 msgstr ""
 
-#: inc/hooks/recommend.php:86
+#: inc/hooks/recommend.php:53
+msgid "Contact Form 7"
+msgstr ""
+
+#: inc/hooks/recommend.php:60
+msgid "Universal Google AdSense"
+msgstr ""
+
+#: inc/hooks/recommend.php:93
 msgid "This theme requires the following plugin: %1$s."
 msgid_plural "This theme requires the following plugins: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/hooks/recommend.php:91
+#: inc/hooks/recommend.php:98
 msgid "This theme recommends the following plugin: %1$s."
 msgid_plural "This theme recommends the following plugins: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/hooks/recommend.php:96
+#: inc/hooks/recommend.php:103
 msgid ""
 "The following plugin needs to be updated to its latest version to ensure "
 "maximum compatibility with this theme: %1$s."
@@ -1296,19 +1303,19 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/hooks/recommend.php:101
+#: inc/hooks/recommend.php:108
 msgid "There is an update available for: %1$s."
 msgid_plural "There are updates available for the following plugins: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/hooks/recommend.php:106
+#: inc/hooks/recommend.php:113
 msgid "The following required plugin is currently inactive: %1$s."
 msgid_plural "The following required plugins are currently inactive: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/hooks/recommend.php:111
+#: inc/hooks/recommend.php:118
 msgid "The following recommended plugin is currently inactive: %1$s."
 msgid_plural "The following recommended plugins are currently inactive: %1$s."
 msgstr[0] ""

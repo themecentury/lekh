@@ -1,5 +1,4 @@
 === Lekh ===
-
 Contributors:       themecentury
 Requires at least:  WordPress 4.0
 Tested up to:       WordPress 5.2.2
@@ -52,9 +51,6 @@ https://github.com/pixelcog/parallax.js - MIT License
 
 = 1.0.3 - 2019/07/04 =
     * Fixed: Modify all field.
-    * 
-
-= 1.0.2 - 2019/06/30 =
     * Added: Breadcrumbs Features added
 
 = 1.0.2 - 2019/03/30 =
@@ -72,7 +68,8 @@ https://github.com/pixelcog/parallax.js - MIT License
 
 == Upgrade Notice ==
 
-= 1.0.2 - 2019/06/30 =
+= 1.0.3 =
+    * Fixed: Modify all field.
     * Added: Breadcrumbs Features added
 
 = 1.0.2 - 2019/03/30 =

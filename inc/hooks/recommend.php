@@ -43,6 +43,13 @@ function lekh_register_required_plugins() {
 	$plugins = array(
 
 		array(
+            'name'      => esc_html__( 'Century ToolKit', 'lekh' ),
+            'slug'      => 'century-toolkit',
+            'required'  => false,
+            'force_activation'   => false,
+            'force_deactivation' => false,
+        ),
+        array(
             'name'      => esc_html__( 'Contact Form 7', 'lekh' ),
             'slug'      => 'contact-form-7',
             'required'  => false,
@@ -50,12 +57,12 @@ function lekh_register_required_plugins() {
             'force_deactivation' => false,
         ),
         array(
-            'name'      => esc_html__( 'Century ToolKit', 'lekh' ),
-            'slug'      => 'century-toolkit',
+            'name'      => esc_html__( 'Universal Google AdSense', 'lekh' ),
+            'slug'      => 'universal-google-adsense-and-ads-manager',
             'required'  => false,
             'force_activation'   => false,
             'force_deactivation' => false,
-        )
+        ),
 
 	);
 
