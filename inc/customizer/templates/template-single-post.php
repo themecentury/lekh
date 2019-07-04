@@ -12,6 +12,25 @@ $wp_customize->add_section(
 	)
 );
 
+// Enable Breadcrumbs
+$wp_customize->add_setting( 
+	'enable_breadcrumbs_single', 
+	array(
+		'default'           => 1,
+		'sanitize_callback' => 'absint',
+	)
+);
+
+$wp_customize->add_control( 
+	'enable_breadcrumbs_single', 
+	array(
+		'label'   	=> esc_html__( 'Enable Breadcrumbs?', 'lekh' ),
+		'section' 	=> 'lekh_single_post',
+		'type'    	=> 'checkbox',
+		'priority'	=> 10,
+	)
+);
+
 // Feauted Image
 $wp_customize->add_setting( 
 	'post_has_featured_image', 
@@ -27,6 +46,7 @@ $wp_customize->add_control(
 		'label'   => esc_html__( 'Display Featured Image', 'lekh' ),
 		'section' => 'lekh_single_post',
 		'type'    => 'checkbox',
+		'priority'	=> 20,
 	)
 );
 
@@ -42,6 +62,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control( 
 	'post_style', 
 	array(
+		'priority'	=> 30,
 		'label'           => esc_html__( 'Style', 'lekh' ),
 		'section'         => 'lekh_single_post',
 		'type'            => 'radio',
@@ -66,6 +87,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control( 
 	'post_sidebar_position', 
 	array(
+		'priority'	=> 40,
 		'label'   => esc_html__( 'Sidebar Position', 'lekh' ),
 		'section' => 'lekh_single_post',
 		'type'    => 'select',
@@ -90,6 +112,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control( 
 	'show_author_bio', 
 	array(
+		'priority'	=> 50,
 		'label'   => esc_html__( 'Display Author Bio', 'lekh' ),
 		'section' => 'lekh_single_post',
 		'type'    => 'checkbox',

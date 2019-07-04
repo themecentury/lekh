@@ -7,12 +7,7 @@
  * @package Lekh
  * @since Lekh 1.0
  */
-
 ?>
-
 <aside id="secondary" class="sidebar widget-area" role="complementary">
 		<?php if ( is_active_sidebar( 'sidebar-1' ) ) { dynamic_sidebar( 'sidebar-1' ); } ?>
 </aside><!-- #secondary -->
-
-
-

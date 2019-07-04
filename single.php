@@ -9,8 +9,11 @@
  */
 // Sidebar Options
 $post_sidebar_position = get_theme_mod('post_sidebar_position', 'content-sidebar');
-
 get_header();
+$enable_breadcrumbs = get_theme_mod( 'enable_breadcrumbs_single', 1 );
+if($enable_breadcrumbs){
+    lekh_breadcrumbs_template();
+}
 ?>
 <?php 
     if (have_posts()) :

@@ -8,16 +8,17 @@
  * @since Lekh 1.0
  */
 get_header();
-?>
 
-<?php
+$enable_breadcrumbs = get_theme_mod( 'enable_breadcrumbs_search', 1 );
+if($enable_breadcrumbs){
+    lekh_breadcrumbs_template();
+}
+
 /* Archive Options */
-$archive_layout = get_theme_mod('archive_layout', 'list');
-$archive_sidebar_position = get_theme_mod('archive_sidebar_position', 'content-sidebar');
-$post_template = lekh_archive_template();
-$post_column = lekh_archive_column();
+$search_page_layout = get_theme_mod('search_page_layout', 'list');
+$search_sidebar_position = get_theme_mod('search_sidebar_position', 'content-sidebar');
+$post_column = lekh_search_column();
 ?>
-
 <section id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
 
@@ -33,7 +34,7 @@ $post_column = lekh_archive_column();
 
         <?php if (have_posts()) : ?>
 
-            <section class="row posts-loop <?php if ('grid' == $archive_layout) {
+            <section class="row posts-loop <?php if ('grid' == $search_page_layout) {
             echo esc_attr('flex-row');
         } ?>">
                 <?php
@@ -41,7 +42,7 @@ $post_column = lekh_archive_column();
                 while (have_posts()) : the_post();
                     ?>
                     <div class="post-wrapper <?php echo esc_attr($post_column); ?>">
-                    <?php get_template_part('template-parts/post/content', $post_template); ?>
+                    <?php get_template_part('template-parts/post/content', $search_page_layout); ?>
                     </div>
             <?php endwhile; ?>
             </section>
@@ -62,7 +63,7 @@ $post_column = lekh_archive_column();
 
 <?php
 // Sidebar
-if ('content-sidebar' == $archive_sidebar_position || 'sidebar-content' == $archive_sidebar_position) {
+if ('content-sidebar' == $search_sidebar_position || 'sidebar-content' == $search_sidebar_position) {
     get_sidebar();
 }
 ?>

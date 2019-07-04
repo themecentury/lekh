@@ -10,3 +10,5 @@ $wp_customize->add_panel(
 );
 
 require_once lekh_file_directory('inc/customizer/sections/section-social-icons.php');
+
+require_once lekh_file_directory('inc/customizer/sections/section-breadcrumbs-option.php');

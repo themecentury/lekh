@@ -280,6 +280,10 @@
 		float: none;
 		width: 100%;
 	}
+	.content-centered .content-area{
+		width:70%;
+		margin:0 auto;
+	}
 	.content-fullwidth .large-post .entry-header,
 	.content-fullwidth .large-post .entry-summary,
 	.has-no-sidebar .content-area .large-post .entry-header,

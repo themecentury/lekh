@@ -12,6 +12,26 @@ $wp_customize->add_section(
 	)
 );
 
+// Enable Breadcrumbs
+$wp_customize->add_setting( 
+	'enable_breadcrumbs_page', 
+	array(
+		'default'           => 1,
+		'sanitize_callback' => 'absint',
+	)
+);
+
+$wp_customize->add_control( 
+	'enable_breadcrumbs_page', 
+	array(
+		'label'   	=> esc_html__( 'Enable Breadcrumbs?', 'lekh' ),
+		'section' 	=> 'lekh_single_page',
+		'type'    	=> 'checkbox',
+		'priority'	=> 10,
+	)
+);
+
+
 // Featured Image
 $wp_customize->add_setting( 
 	'page_has_featured_image', 
@@ -27,6 +47,7 @@ $wp_customize->add_control(
 		'label'   => esc_html__( 'Display Featured Image', 'lekh' ),
 		'section' => 'lekh_single_page',
 		'type'    => 'checkbox',
+		'priority'	=> 20,
 	) 
 );
 
@@ -42,6 +63,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control( 
 	'page_style', 
 	array(
+		'priority'	=> 30,
 		'label'           => esc_html__( 'Style', 'lekh' ),
 		'section'         => 'lekh_single_page',
 		'type'            => 'radio',
@@ -66,6 +88,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control( 
 	'page_sidebar_position', 
 	array(
+		'priority'	=> 40,
 		'label'       => esc_html__( 'Sidebar Position', 'lekh' ),
 		'description' => esc_html__( 'Sidebar options for Static Pages. To remove the Sidebar apply No Sidebar Template to the Page.', 'lekh' ),
 		'section'     => 'lekh_single_page',
@@ -73,6 +96,8 @@ $wp_customize->add_control(
 		'choices'     => array(
 			'content-sidebar' => esc_html__( 'Right Sidebar', 'lekh' ),
 			'sidebar-content' => esc_html__( 'Left Sidebar', 'lekh' ),
+			'content-centered'  => esc_html__( 'No Sidebar Centered', 'lekh' ),
+			'content-fullwidth' => esc_html__( 'No Sidebar Full width', 'lekh' ),
 		)
 	) 
 );

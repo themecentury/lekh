@@ -20,6 +20,8 @@ function lekh_body_classes($classes) {
     $header_layout = esc_attr(get_theme_mod('header_layout', 'header-layout3'));
     $blog_sidebar_position = get_theme_mod('blog_sidebar_position', 'content-sidebar');
     $archive_sidebar_position = get_theme_mod('archive_sidebar_position', 'content-sidebar');
+    $search_sidebar_position = get_theme_mod('search_sidebar_position', 'content-sidebar');
+    $sidebar_position_404 = get_theme_mod( '404_sidebar_position', 'content-sidebar' );
     $post_sidebar_position = esc_attr(get_theme_mod('post_sidebar_position', 'content-sidebar'));
     $post_style = esc_attr(get_theme_mod('post_style', 'fimg-classic'));
     $page_sidebar_position = esc_attr(get_theme_mod('page_sidebar_position', 'content-sidebar'));
@@ -45,14 +47,20 @@ function lekh_body_classes($classes) {
         if (is_home()) {
             $classes[] = $blog_sidebar_position;
         }
-        if (is_archive() || is_search()) {
+        if ( is_archive() ) {
             $classes[] = $archive_sidebar_position;
+        }
+        if( is_search() ){
+            $classes[] = $search_sidebar_position;
         }
         if (is_single()) {
             $classes[] = $post_sidebar_position;
         }
         if (is_page() && !is_home()) {
             $classes[] = $page_sidebar_position;
+        }
+        if (is_404()) {
+            $classes[] = $sidebar_position_404;
         }
     }
 

@@ -11,6 +11,27 @@ $wp_customize->add_section(
 		'description' => esc_html__( 'Options for blog page(index.php).', 'lekh' ),
 	)
 );
+
+
+// Enable Breadcrumbs
+$wp_customize->add_setting( 
+	'enable_breadcrumbs_index', 
+	array(
+		'default'           => 1,
+		'sanitize_callback' => 'absint',
+	)
+);
+
+$wp_customize->add_control( 
+	'enable_breadcrumbs_index', 
+	array(
+		'label'   	=> esc_html__( 'Enable Breadcrumbs?', 'lekh' ),
+		'section' 	=> 'lekh_index_page',
+		'type'    	=> 'checkbox',
+		'priority'	=> 10,
+	)
+);
+
 // Blog Post Layout
 $wp_customize->add_setting( 
 	'blog_layout', 
@@ -49,6 +70,7 @@ $wp_customize->add_control(
 		'choices' => array(
 			'content-sidebar'   => esc_html__( 'Right Sidebar', 'lekh' ),
 			'sidebar-content'   => esc_html__( 'Left Sidebar', 'lekh' ),
+			'content-centered'  => esc_html__( 'No Sidebar Centered', 'lekh' ),
 			'content-fullwidth' => esc_html__( 'No Sidebar Full width', 'lekh' ),
 		)
 	) 
@@ -69,7 +91,7 @@ $wp_customize->add_control(
 		'type'    => 'number',
 	) 
 );
-// Show CTA Section
+// Show Blocks Section
 $wp_customize->add_setting( 
 	'blog_show_cta', 
 	array(
@@ -80,7 +102,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control( 
 	'blog_show_cta', 
 	array(
-		'label'   => esc_html__( 'Show CTA?', 'lekh' ),
+		'label'   => esc_html__( 'Show Blocks?', 'lekh' ),
 		'section' => 'lekh_index_page',
 		'type'    => 'checkbox',
 	) 

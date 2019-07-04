@@ -18,3 +18,6 @@ require_once lekh_file_directory('inc/customizer/templates/template-archive-page
 require_once lekh_file_directory('inc/customizer/templates/template-blog-page.php');
 
 require_once lekh_file_directory('inc/customizer/templates/template-static-frontpage.php');
+require_once lekh_file_directory('inc/customizer/templates/template-search-page.php');
+
+require_once lekh_file_directory('inc/customizer/templates/template-404-page.php');

@@ -17,6 +17,11 @@ $show_cta = absint(get_theme_mod('blog_show_cta', 1));
 if (is_home() && $show_cta):
     get_template_part('template-parts/page/blog', 'box');
 endif;
+$enable_breadcrumbs = get_theme_mod( 'enable_breadcrumbs_index', 1 );
+if( is_home() && $enable_breadcrumbs ){
+    lekh_breadcrumbs_template();
+}
+
 /* Blog Options */
 $blog_layout = get_theme_mod('blog_layout', 'list');
 $blog_sidebar_position = get_theme_mod('blog_sidebar_position', 'content-sidebar');

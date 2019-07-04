@@ -122,14 +122,14 @@ function lekh_blog_template() {
  *
  */
  function lekh_archive_template() {
- 	$archive_layout = get_theme_mod('archive_layout', 'list');
- 	if ('list' == $archive_layout) {
- 		return sanitize_file_name('list');
- 	} elseif ('grid' == $archive_layout) {
- 		return sanitize_file_name('grid');
- 	} else {
- 		return;
- 	}
+    $archive_layout = get_theme_mod('archive_layout', 'list');
+    if ('list' == $archive_layout) {
+        return sanitize_file_name('list');
+    } elseif ('grid' == $archive_layout) {
+        return sanitize_file_name('grid');
+    } else {
+        return;
+    }
  }
 
 /**
@@ -157,6 +157,33 @@ function lekh_archive_column() {
 	}
 
 	return ( $archive_column );
+}
+
+/**
+ * Search: Post Columns
+ *
+ */
+function lekh_search_column() {
+    $search_layout = get_theme_mod('search_page_layout', 'list');
+    $search_sidebar_position = get_theme_mod('search_sidebar_position', 'content-sidebar');
+
+    if ('list' == $search_layout) {
+        if (!is_active_sidebar('sidebar-1') || 'content-fullwidth' == $search_sidebar_position) {
+            $search_column = 'col-6 col-sm-6';
+        } else {
+            $search_column = 'col-12';
+        }
+    } elseif ('grid' == $search_layout) {
+        if (!is_active_sidebar('sidebar-1') || 'content-fullwidth' == $search_sidebar_position) {
+            $search_column = 'col-4 col-sm-6';
+        } else {
+            $search_column = 'col-6 col-sm-6';
+        }
+    } else {
+        $search_column = 'col-12';
+    }
+
+    return ( $search_column );
 }
 
 
@@ -411,6 +438,36 @@ if(!function_exists('lekh_author_listing')):
 
         return $author_listing;
 
+    }
+
+endif;
+
+
+if( !function_exists( 'lekh_breadcrumbs_template' ) ):
+
+    function lekh_breadcrumbs_template(){
+
+        if ( ! function_exists( 'lekh_breadcrumb_trail' ) ) {
+            require_once trailingslashit( get_template_directory() ) . '/inc/library/breadcrumbs/breadcrumbs.php';
+        }
+        $breadcrumbs_background = get_theme_mod( 'lekh_breadcrumbs_background', false );
+        $breadcrumbs_class = get_theme_mod( 'lekh_breadcrumbs_layout', 'layout1' );
+        $breadcrumbs_class .= ($breadcrumbs_background) ? ' has-image' : ' no-image';
+        ?>
+        <div id="breadcrumbs" class="lekh-breadcrumbs-wrapper">
+            <div class="breadcrumbs-wrap <?php echo esc_attr($breadcrumbs_class); ?>" style="background-image:url(<?php echo esc_url($breadcrumbs_background); ?>);" >
+                <div class="hmc-bdcb-container">
+                    <?php
+                    $breadcrumb_args = array(
+                        'container'   => 'div',
+                        'show_browse' => false,
+                    );
+                    lekh_breadcrumb_trail( $breadcrumb_args );
+                    ?>
+                </div><!-- .container -->
+            </div>
+        </div><!-- #breadcrumb -->
+        <?php
     }
 
 endif;

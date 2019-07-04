@@ -183,15 +183,18 @@ function lekh_excerpt_length($excerpt_length) {
         return $excerpt_length;
     }
 
-    if (is_home()) {
+    if( is_home() ){
         $excerpt_length = get_theme_mod('blog_excerpt_length', 25);
-    } elseif (is_archive() || is_search()) {
+    }elseif( is_archive() ){
         $excerpt_length = get_theme_mod('archive_excerpt_length', 25);
-    } else {
+    }elseif( is_search() ){
+        $excerpt_length = get_theme_mod( 'search_excerpt_length', 25);
+    }else{
         $excerpt_length = 25;
     }
 
-    return intval($excerpt_length);
+    return absint($excerpt_length);
+
 }
 
 add_filter('excerpt_length', 'lekh_excerpt_length', 999);

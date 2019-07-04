@@ -14,6 +14,10 @@ $archive_layout = get_theme_mod('archive_layout', 'list');
 $archive_sidebar_position = get_theme_mod('archive_sidebar_position', 'content-sidebar');
 $post_template = lekh_archive_template();
 $post_column = lekh_archive_column();
+$enable_breadcrumbs = get_theme_mod( 'enable_breadcrumbs_archive', 1 );
+if($enable_breadcrumbs){
+    lekh_breadcrumbs_template();
+}
 ?>
 <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
