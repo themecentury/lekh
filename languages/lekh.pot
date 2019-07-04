@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: themecentury@gmail.com\n"
-"POT-Creation-Date: 2019-03-29 19:04:17+00:00\n"
+"POT-Creation-Date: 2019-07-04 09:45:26+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -30,10 +30,10 @@ msgid "4"
 msgstr ""
 
 #: 404.php:17
-msgid "Oops! That page can&rsquo;t be found."
+msgid "Oops! That page can't be found."
 msgstr ""
 
-#: 404.php:22
+#: 404.php:18 inc/customizer/templates/template-404-page.php:82
 msgid "It looks like nothing was found at this location. Maybe try a search?"
 msgstr ""
 
@@ -780,7 +780,7 @@ msgid "Settings for footer bottom section."
 msgstr ""
 
 #: inc/customizer/footer/section-info-footer.php:19
-#: inc/functions/functions.php:209
+#: inc/functions/functions.php:236
 msgid "&copy; 2019 Best blog in 21st Century"
 msgstr ""
 
@@ -847,8 +847,8 @@ msgid "Options for header settings section."
 msgstr ""
 
 #: inc/customizer/header/section-header-settings.php:25
-#: inc/customizer/templates/template-single-page.php:45
-#: inc/customizer/templates/template-single-post.php:45
+#: inc/customizer/templates/template-single-page.php:67
+#: inc/customizer/templates/template-single-post.php:66
 msgid "Style"
 msgstr ""
 
@@ -956,6 +956,26 @@ msgstr ""
 msgid "ALL Sections"
 msgstr ""
 
+#: inc/customizer/sections/section-breadcrumbs-option.php:10
+msgid "Breadcrumbs"
+msgstr ""
+
+#: inc/customizer/sections/section-breadcrumbs-option.php:32
+msgid "Breadcrumbs Layout"
+msgstr ""
+
+#: inc/customizer/sections/section-breadcrumbs-option.php:37
+msgid "Layout One"
+msgstr ""
+
+#: inc/customizer/sections/section-breadcrumbs-option.php:38
+msgid "Layout Two"
+msgstr ""
+
+#: inc/customizer/sections/section-breadcrumbs-option.php:61
+msgid "Breadcrumbs Background"
+msgstr ""
+
 #: inc/customizer/sections/section-social-icons.php:10
 msgid "Social Icons"
 msgstr ""
@@ -1011,6 +1031,84 @@ msgid ""
 "Page Templates, Archive, 404 etc."
 msgstr ""
 
+#: inc/customizer/templates/template-404-page.php:8
+msgid "404 Options"
+msgstr ""
+
+#: inc/customizer/templates/template-404-page.php:11
+msgid "Options for post details(404.php)."
+msgstr ""
+
+#: inc/customizer/templates/template-404-page.php:29
+#: inc/customizer/templates/template-archive-page.php:28
+#: inc/customizer/templates/template-blog-page.php:28
+#: inc/customizer/templates/template-search-page.php:28
+#: inc/customizer/templates/template-single-page.php:27
+#: inc/customizer/templates/template-single-post.php:27
+msgid "Enable Breadcrumbs?"
+msgstr ""
+
+#: inc/customizer/templates/template-404-page.php:47
+#: inc/customizer/templates/template-archive-page.php:68
+#: inc/customizer/templates/template-blog-page.php:67
+#: inc/customizer/templates/template-search-page.php:68
+#: inc/customizer/templates/template-single-page.php:92
+#: inc/customizer/templates/template-single-post.php:91
+msgid "Sidebar Position"
+msgstr ""
+
+#: inc/customizer/templates/template-404-page.php:51
+#: inc/customizer/templates/template-archive-page.php:72
+#: inc/customizer/templates/template-blog-page.php:71
+#: inc/customizer/templates/template-search-page.php:72
+#: inc/customizer/templates/template-single-page.php:97
+#: inc/customizer/templates/template-single-post.php:95
+msgid "Right Sidebar"
+msgstr ""
+
+#: inc/customizer/templates/template-404-page.php:52
+#: inc/customizer/templates/template-archive-page.php:73
+#: inc/customizer/templates/template-blog-page.php:72
+#: inc/customizer/templates/template-search-page.php:73
+#: inc/customizer/templates/template-single-page.php:98
+#: inc/customizer/templates/template-single-post.php:96
+msgid "Left Sidebar"
+msgstr ""
+
+#: inc/customizer/templates/template-404-page.php:53
+#: inc/customizer/templates/template-archive-page.php:74
+#: inc/customizer/templates/template-blog-page.php:73
+#: inc/customizer/templates/template-search-page.php:74
+#: inc/customizer/templates/template-single-page.php:99
+#: inc/customizer/templates/template-single-post.php:97
+msgid "No Sidebar Centered"
+msgstr ""
+
+#: inc/customizer/templates/template-404-page.php:54
+#: inc/customizer/templates/template-archive-page.php:75
+#: inc/customizer/templates/template-blog-page.php:74
+#: inc/customizer/templates/template-search-page.php:75
+#: inc/customizer/templates/template-single-page.php:100
+#: inc/customizer/templates/template-single-post.php:98
+msgid "No Sidebar Full width"
+msgstr ""
+
+#: inc/customizer/templates/template-404-page.php:63
+msgid "Oops! That page can’t be found."
+msgstr ""
+
+#: inc/customizer/templates/template-404-page.php:71
+msgid "404 Page Title"
+msgstr ""
+
+#: inc/customizer/templates/template-404-page.php:90
+msgid "404 Page Description"
+msgstr ""
+
+#: inc/customizer/templates/template-404-page.php:109
+msgid "Enable search form?"
+msgstr ""
+
 #: inc/customizer/templates/template-archive-page.php:8
 msgid "Archive Options"
 msgstr ""
@@ -1019,55 +1117,32 @@ msgstr ""
 msgid "Options for archvie page(archive.php)."
 msgstr ""
 
-#: inc/customizer/templates/template-archive-page.php:26
-#: inc/customizer/templates/template-blog-page.php:25
+#: inc/customizer/templates/template-archive-page.php:46
+#: inc/customizer/templates/template-blog-page.php:46
 msgid "Post Layout"
 msgstr ""
 
-#: inc/customizer/templates/template-archive-page.php:30
-#: inc/customizer/templates/template-blog-page.php:29
+#: inc/customizer/templates/template-archive-page.php:50
+#: inc/customizer/templates/template-blog-page.php:50
+#: inc/customizer/templates/template-search-page.php:50
 msgid "List"
 msgstr ""
 
-#: inc/customizer/templates/template-archive-page.php:31
-#: inc/customizer/templates/template-blog-page.php:30
+#: inc/customizer/templates/template-archive-page.php:51
+#: inc/customizer/templates/template-blog-page.php:51
+#: inc/customizer/templates/template-search-page.php:51
 msgid "Grid"
 msgstr ""
 
-#: inc/customizer/templates/template-archive-page.php:32
-#: inc/customizer/templates/template-blog-page.php:31
+#: inc/customizer/templates/template-archive-page.php:52
+#: inc/customizer/templates/template-blog-page.php:52
+#: inc/customizer/templates/template-search-page.php:52
 msgid "Large"
 msgstr ""
 
-#: inc/customizer/templates/template-archive-page.php:48
-#: inc/customizer/templates/template-blog-page.php:46
-#: inc/customizer/templates/template-single-page.php:69
-#: inc/customizer/templates/template-single-post.php:69
-msgid "Sidebar Position"
-msgstr ""
-
-#: inc/customizer/templates/template-archive-page.php:52
-#: inc/customizer/templates/template-blog-page.php:50
-#: inc/customizer/templates/template-single-page.php:74
-#: inc/customizer/templates/template-single-post.php:73
-msgid "Right Sidebar"
-msgstr ""
-
-#: inc/customizer/templates/template-archive-page.php:53
-#: inc/customizer/templates/template-blog-page.php:51
-#: inc/customizer/templates/template-single-page.php:75
-#: inc/customizer/templates/template-single-post.php:74
-msgid "Left Sidebar"
-msgstr ""
-
-#: inc/customizer/templates/template-archive-page.php:54
-#: inc/customizer/templates/template-blog-page.php:52
-#: inc/customizer/templates/template-single-post.php:76
-msgid "No Sidebar Full width"
-msgstr ""
-
-#: inc/customizer/templates/template-archive-page.php:70
-#: inc/customizer/templates/template-blog-page.php:67
+#: inc/customizer/templates/template-archive-page.php:91
+#: inc/customizer/templates/template-blog-page.php:89
+#: inc/customizer/templates/template-search-page.php:91
 msgid "Excerpt length"
 msgstr ""
 
@@ -1079,12 +1154,24 @@ msgstr ""
 msgid "Options for blog page(index.php)."
 msgstr ""
 
-#: inc/customizer/templates/template-blog-page.php:83
-msgid "Show CTA?"
+#: inc/customizer/templates/template-blog-page.php:105
+msgid "Show Blocks?"
 msgstr ""
 
-#: inc/customizer/templates/template-blog-page.php:99
+#: inc/customizer/templates/template-blog-page.php:121
 msgid "Infinite Scrolling?"
+msgstr ""
+
+#: inc/customizer/templates/template-search-page.php:8
+msgid "Search Options"
+msgstr ""
+
+#: inc/customizer/templates/template-search-page.php:11
+msgid "Options for search page(search.php)."
+msgstr ""
+
+#: inc/customizer/templates/template-search-page.php:46
+msgid "Search Layout"
 msgstr ""
 
 #: inc/customizer/templates/template-single-page.php:8
@@ -1095,26 +1182,26 @@ msgstr ""
 msgid "Options for page details(page.php)."
 msgstr ""
 
-#: inc/customizer/templates/template-single-page.php:27
-#: inc/customizer/templates/template-single-post.php:27
+#: inc/customizer/templates/template-single-page.php:47
+#: inc/customizer/templates/template-single-post.php:46
 msgid "Display Featured Image"
 msgstr ""
 
-#: inc/customizer/templates/template-single-page.php:49
+#: inc/customizer/templates/template-single-page.php:71
 msgid "Large Featured Image"
 msgstr ""
 
-#: inc/customizer/templates/template-single-page.php:50
-#: inc/customizer/templates/template-single-post.php:50
+#: inc/customizer/templates/template-single-page.php:72
+#: inc/customizer/templates/template-single-post.php:71
 msgid "Full width Featured Image"
 msgstr ""
 
-#: inc/customizer/templates/template-single-page.php:51
-#: inc/customizer/templates/template-single-post.php:51
+#: inc/customizer/templates/template-single-page.php:73
+#: inc/customizer/templates/template-single-post.php:72
 msgid "Full width with parallax Image"
 msgstr ""
 
-#: inc/customizer/templates/template-single-page.php:70
+#: inc/customizer/templates/template-single-page.php:93
 msgid ""
 "Sidebar options for Static Pages. To remove the Sidebar apply No Sidebar "
 "Template to the Page."
@@ -1128,19 +1215,15 @@ msgstr ""
 msgid "Options for post details(single.php)."
 msgstr ""
 
-#: inc/customizer/templates/template-single-post.php:49
+#: inc/customizer/templates/template-single-post.php:70
 msgid "Classic Featured Image"
 msgstr ""
 
-#: inc/customizer/templates/template-single-post.php:75
-msgid "No Sidebar Centered"
-msgstr ""
-
-#: inc/customizer/templates/template-single-post.php:93
+#: inc/customizer/templates/template-single-post.php:116
 msgid "Display Author Bio"
 msgstr ""
 
-#: inc/functions/functions.php:70
+#: inc/functions/functions.php:70 inc/library/breadcrumbs/breadcrumbs.php:253
 msgid "Home"
 msgstr ""
 
@@ -1156,7 +1239,7 @@ msgstr ""
 msgid "Support Forum"
 msgstr ""
 
-#: inc/functions/functions.php:334 inc/functions/functions.php:377
+#: inc/functions/functions.php:361 inc/functions/functions.php:404
 msgid "Select Category"
 msgstr ""
 
@@ -1236,8 +1319,41 @@ msgstr[1] ""
 msgid "Main Menu"
 msgstr ""
 
-#: inc/hooks/setup.php:209 inc/widgets/class-lekh-slider-widget.php:98
+#: inc/hooks/setup.php:212 inc/widgets/class-lekh-slider-widget.php:98
 msgid "Read More"
+msgstr ""
+
+#: inc/library/breadcrumbs/breadcrumbs.php:251
+msgid "Browse:"
+msgstr ""
+
+#: inc/library/breadcrumbs/breadcrumbs.php:254
+msgid "404 Not Found"
+msgstr ""
+
+#: inc/library/breadcrumbs/breadcrumbs.php:255
+msgid "Archives"
+msgstr ""
+
+#: inc/library/breadcrumbs/breadcrumbs.php:257
+#. Translators: %s is the search query. The HTML entities are opening and
+#. closing curly quotes.
+msgid "Search results for &#8220;%s&#8221;"
+msgstr ""
+
+#: inc/library/breadcrumbs/breadcrumbs.php:259
+#. Translators: %s is the page number.
+msgid "Page %s"
+msgstr ""
+
+#: inc/library/breadcrumbs/breadcrumbs.php:261
+#. Translators: Minute archive title. %s is the minute time format.
+msgid "Minute %s"
+msgstr ""
+
+#: inc/library/breadcrumbs/breadcrumbs.php:263
+#. Translators: Weekly archive title. %s is the week date format.
+msgid "Week %s"
 msgstr ""
 
 #: inc/widgets/class-lekh-author-widget.php:20
@@ -1422,19 +1538,19 @@ msgstr ""
 msgid "Footer Widget Area 4"
 msgstr ""
 
-#: index.php:49
+#: index.php:54
 msgid "Loading Image"
 msgstr ""
 
-#: search.php:27
+#: search.php:28
 msgid "Search Results for: %s"
 msgstr ""
 
-#: search.php:29 template-parts/post/content-none.php:16
+#: search.php:30 template-parts/post/content-none.php:16
 msgid "Nothing Found"
 msgstr ""
 
-#: search.php:53
+#: search.php:54
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
@@ -1547,6 +1663,53 @@ msgstr ""
 #: inc/functions/template-tags.php:39
 msgctxt "Used before post author name."
 msgid "Author"
+msgstr ""
+
+#: inc/library/breadcrumbs/breadcrumbs.php:252
+msgctxt "breadcrumbs aria label"
+msgid "Breadcrumbs"
+msgstr ""
+
+#: inc/library/breadcrumbs/breadcrumbs.php:707
+msgctxt "minute and hour archives time format"
+msgid "g:i a"
+msgstr ""
+
+#: inc/library/breadcrumbs/breadcrumbs.php:725
+msgctxt "minute archives time format"
+msgid "i"
+msgstr ""
+
+#: inc/library/breadcrumbs/breadcrumbs.php:743
+msgctxt "hour archives time format"
+msgid "g a"
+msgstr ""
+
+#: inc/library/breadcrumbs/breadcrumbs.php:760
+#: inc/library/breadcrumbs/breadcrumbs.php:789
+#: inc/library/breadcrumbs/breadcrumbs.php:819
+#: inc/library/breadcrumbs/breadcrumbs.php:846
+#: inc/library/breadcrumbs/breadcrumbs.php:1209
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: inc/library/breadcrumbs/breadcrumbs.php:761
+#: inc/library/breadcrumbs/breadcrumbs.php:820
+#: inc/library/breadcrumbs/breadcrumbs.php:1212
+msgctxt "monthly archives date format"
+msgid "F"
+msgstr ""
+
+#: inc/library/breadcrumbs/breadcrumbs.php:762
+#: inc/library/breadcrumbs/breadcrumbs.php:1215
+msgctxt "daily archives date format"
+msgid "j"
+msgstr ""
+
+#: inc/library/breadcrumbs/breadcrumbs.php:790
+msgctxt "weekly archives date format"
+msgid "W"
 msgstr ""
 
 #: searchform.php:12
