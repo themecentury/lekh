@@ -6,9 +6,9 @@
  * @subpackage DigitalMarket
  * @since 1.0.0
  */
-if ( ! class_exists( 'Theme_Century_Master_Widget' ) ) {
+if ( ! class_exists( 'Centurylib_Master_Widget' ) ) {
 
-    abstract class Theme_Century_Master_Widget extends WP_Widget {
+    abstract class Centurylib_Master_Widget extends WP_Widget {
 
         /**
          * Helper function that holds widget fields
@@ -168,6 +168,6 @@ if ( ! class_exists( 'Theme_Century_Master_Widget' ) ) {
             
         }
 
-    } // Class Theme_Century_Master_Widget ends here
+    } // Class Centurylib_Master_Widget ends here
     
 }

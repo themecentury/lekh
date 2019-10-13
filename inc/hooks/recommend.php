@@ -56,14 +56,6 @@ function lekh_register_required_plugins() {
             'force_activation'   => false,
             'force_deactivation' => false,
         ),
-        array(
-            'name'      => esc_html__( 'Universal Google AdSense', 'lekh' ),
-            'slug'      => 'universal-google-adsense-and-ads-manager',
-            'required'  => false,
-            'force_activation'   => false,
-            'force_deactivation' => false,
-        ),
-
 	);
 
 	/*

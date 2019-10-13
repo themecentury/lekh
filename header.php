@@ -22,7 +22,12 @@
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-	<?php $website_layout = lekh_website_layout(); ?>
+	<?php 
+	// body open hooks
+	do_action( 'wp_body_open' );
+	
+	$website_layout = lekh_website_layout(); 
+	?>
 	<div id="page" class="site lekh-main-wrapper <?php echo esc_attr($website_layout); ?>-layout">
 		<?php 
 		$backtotop = get_theme_mod('back_to_top_button');

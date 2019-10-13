@@ -13,7 +13,8 @@ if ( ! function_exists( 'lekh_posted_on' ) ) :
 	/**
 	 * Prints HTML with meta information for the current post-date/time and author.
 	 */
-	function lekh_posted_on() {
+	function lekh_posted_on( $show_date = true, $show_author=true ){
+
 		$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
 
 		if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
@@ -43,6 +44,7 @@ if ( ! function_exists( 'lekh_posted_on' ) ) :
 		}
 
 	}
+	
 endif;
 
 

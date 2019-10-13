@@ -11,7 +11,7 @@
 
 if (!class_exists('Lekh_Slider_Widget')) {
     
-    class Lekh_Slider_Widget extends Theme_Century_Master_Widget{
+    class Lekh_Slider_Widget extends Centurylib_Master_Widget{
 
         /**
          * Register widget with WordPress.

@@ -11,7 +11,7 @@
 
 if (!class_exists('Lekh_Author_Widget')) {
 
-    class Lekh_Author_Widget extends Theme_Century_Master_Widget {
+    class Lekh_Author_Widget extends Centurylib_Master_Widget {
 
         public  function __construct() {
 

@@ -157,4 +157,7 @@
   background: #1e73be;
   padding: 10px;
   color: #ffff; }
+
+#accordion-section-theme_upsell {
+  display: list-item !important; }
 /*# sourceMappingURL=customizer.css.map */

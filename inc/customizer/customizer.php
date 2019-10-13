@@ -14,6 +14,7 @@ if( !function_exists('lekh_theme_customizer') ):
     function lekh_theme_customizer($wp_customize){
 
         require_once lekh_file_directory( 'inc/customizer/controls.php');
+        require_once lekh_file_directory('inc/customizer/upsell/lekh-upsell-section.php'); //Upsell section
         require_once lekh_file_directory('inc/customizer/started/lekh-get-started-section.php'); //get-started panel
         require_once lekh_file_directory('inc/customizer/header/panel-header-options.php');
         require_once lekh_file_directory('inc/customizer/templates/panel-templates-options.php');

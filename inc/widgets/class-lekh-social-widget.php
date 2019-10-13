@@ -9,7 +9,7 @@
  * @since 1.0.0
  */
 
-class Lekh_Social_Icons_Widget extends Theme_Century_Master_Widget{
+class Lekh_Social_Icons_Widget extends Centurylib_Master_Widget{
 	
 	public  function __construct() {
 
