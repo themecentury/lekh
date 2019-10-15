@@ -63,3 +63,25 @@ $wp_customize->add_control(
 		'choices' => lekh_get_categories(),
 	)
 );
+
+//Top Header Category
+$wp_customize->add_setting( 
+	'breaking_news_noofpost', 
+	array(
+		'default'           => '5',
+		'sanitize_callback' => 'absint',
+	)
+);
+$wp_customize->add_control( 
+	'breaking_news_noofpost', 
+	array(
+		'label'   => esc_html__( 'No of posts', 'lekh' ),
+		'section' => 'lekh_top_header',
+		'type'    => 'number',
+		'input_attrs' => array(
+			'min' => 1,
+			'max' => 10,
+			'step' => 1,
+		),
+	)
+);

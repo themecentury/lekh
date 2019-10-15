@@ -394,20 +394,21 @@ if (!function_exists('lekh_query_args')):
 endif;
 
 if (!function_exists('lekh_get_categories')):
-/**
- * Get all Categories
- */
-function lekh_get_categories() {
-    $args = array('fields' => 'ids');
-    $categories = get_categories();
-    $categories_list = array(
-        '' => esc_html__('Select Category', 'lekh')
-    );
-    foreach ($categories as $category) {
-        $categories_list['' . $category->term_id . ''] = $category->name;
+    /**
+     * Get all Categories
+     */
+    function lekh_get_categories() {
+        $args = array('fields' => 'ids');
+        $categories = get_categories();
+        $categories_list = array(
+            '' => esc_html__('Select Category', 'lekh')
+        );
+        foreach ($categories as $category) {
+            $categories_list[$category->term_id] = $category->name;
+        }
+        return $categories_list;
     }
-    return $categories_list;
-}
+    
 endif;
 
 if(!function_exists('lekh_add_class_to_body')){
@@ -471,3 +472,47 @@ if( !function_exists( 'lekh_breadcrumbs_template' ) ):
     }
 
 endif;
+
+if( !function_exists('lekh_branding_alignment') ){
+
+    function lekh_branding_alignment(){
+
+        $branding_alignment = get_theme_mod( 'header_branding_alignment' );
+        if($branding_alignment){
+            return $branding_alignment;
+        }
+
+        //For old version support
+        $header_layout = get_theme_mod( 'header_layout', 'header-layout3' );
+
+        if($header_layout == 'header-layout2' ){
+            return 'left';
+        }
+
+        return 'center';
+
+    }
+
+}
+
+if( !function_exists('lekh_navigation_alignment') ){
+
+    function lekh_navigation_alignment(){
+
+        $menu_alignment = get_theme_mod( 'header_navigation_alignment' );
+        if($menu_alignment){
+            return $menu_alignment;
+        }
+
+        //For old version support
+        $header_layout = get_theme_mod( 'header_layout', 'header-layout3' );
+
+        if($header_layout == 'header-layout2' ){
+            return 'left';
+        }
+
+        return 'center';
+
+    }
+
+}

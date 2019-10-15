@@ -10,9 +10,7 @@ $wp_customize->add_panel(
 );
 
 require_once lekh_file_directory('inc/customizer/header/section-top-header.php');
-require_once lekh_file_directory('inc/customizer/header/section-branding-header.php');
 require_once lekh_file_directory('inc/customizer/header/section-header-navigation.php');
 require_once lekh_file_directory('inc/customizer/header/section-header-image.php');
 require_once lekh_file_directory('inc/customizer/header/section-header-settings.php');
-
 require_once lekh_file_directory('inc/customizer/header/section-title-tagline.php');

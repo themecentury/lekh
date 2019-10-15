@@ -7,7 +7,8 @@
  */
 $cat_id = absint(get_theme_mod('top_header_category', 0));
 $show_on_topbar = esc_attr(get_theme_mod('show_on_topbar', 'social'));
-$enable_breaking_news = esc_attr(get_theme_mod('enable_breaking_news', 1));
+$enable_breaking_news = esc_attr(get_theme_mod('enable_breaking_news', 1) );
+$noofpost = absint( get_theme_mod( 'breaking_news_noofpost', 5) );
 if ($enable_breaking_news) {
     ?>
     <div class="top-header category-id<?php echo absint(get_theme_mod('top_header_category', 0)); ?>">
@@ -17,8 +18,7 @@ if ($enable_breaking_news) {
                     <?php
                     $args = array(
                         'post_type' => 'post',
-                        'posts_per_page' => 10,
-                        
+                        'posts_per_page' => $noofpost,
                     );
                     if($cat_id){
                         $args['cat'] = $cat_id;

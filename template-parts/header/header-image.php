@@ -6,7 +6,7 @@
  * @since Lekh 1.0
  */
 if (get_header_image()) {
-	$is_header_parallax = absint(get_theme_mod('show_headerimage_parallax', 0)) ? 1 : 0;
+	$is_header_parallax = absint( get_theme_mod( 'show_headerimage_parallax', 0 ) ) ? 1 : 0;
 	$header_image_parallax = ' data-parallax="scroll" data-image-src="'.esc_url( get_header_image() ).'" ';
 	$header_image_background = ' style="background-image: url('.esc_url( get_header_image() ).')" ';
     ?>

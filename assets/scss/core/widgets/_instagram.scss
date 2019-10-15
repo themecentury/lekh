@@ -4,5 +4,8 @@
  *
  * @since 1.0.0
  */
-@import "widgets/reset";
-@import "widgets/instagram";
+.instagram-image-details{
+	figurecaption{
+	    display: none;
+	}
+}

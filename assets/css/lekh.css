@@ -1164,21 +1164,21 @@ figure {
   padding: 0 4px; }
 
 /* Site Title Centered */
-.site-title-centered .site-branding {
+.site-header-wrap .site-branding {
   position: relative; }
   @media (min-width: 960px) {
-    .site-title-centered .site-branding {
+    .site-header-wrap .site-branding {
       padding: 30px 0; } }
 
-.site-title-centered .site-title {
+.site-header-wrap .site-title {
   text-align: center;
   margin: auto;
   padding: 0 10px; }
   @media (min-width: 960px) {
-    .site-title-centered .site-title {
+    .site-header-wrap .site-title {
       font-size: 48px; } }
 
-.site-title-centered .site-description {
+.site-header-wrap .site-description {
   max-width: 760px;
   margin: 10px auto 0;
   padding: 0 20px;
@@ -1187,22 +1187,22 @@ figure {
   text-transform: uppercase; }
 
 @media (min-width: 960px) {
-  .site-title-centered .top-search {
+  .site-header-wrap .top-search {
     margin: 0;
     float: none; } }
 
-.site-title-centered .header-image {
+.site-header-wrap .header-image {
   display: table; }
-  .site-title-centered .header-image .site-title a {
+  .site-header-wrap .header-image .site-title a {
     color: #fff; }
-    .site-title-centered .header-image .site-title a:before {
+    .site-header-wrap .header-image .site-title a:before {
       border-bottom-color: #fff; }
-  .site-title-centered .header-image .site-branding {
+  .site-header-wrap .header-image .site-branding {
     padding: 0; }
-  .site-title-centered .header-image .site-description {
+  .site-header-wrap .header-image .site-description {
     color: #fff;
     font-weight: 700; }
-  .site-title-centered .header-image .header-image-container {
+  .site-header-wrap .header-image .header-image-container {
     display: table-cell;
     vertical-align: middle; }
 
@@ -1533,16 +1533,7 @@ body.mobile-sidebar-active:before {
        -o-transform: translate(0px, -6px) rotate(45deg);
           transform: translate(0px, -6px) rotate(45deg); }
 
-.header-layout-2 .site-branding,
-.header-layout2 .site-branding {
-  float: left; }
-  .header-layout-2 .site-branding p, .header-layout-2 .site-branding a,
-  .header-layout2 .site-branding p,
-  .header-layout2 .site-branding a {
-    text-align: left; }
-
 .lekh-social-icons-wrapper {
-  text-align: center;
   padding: 10px 5px; }
   .lekh-social-icons-wrapper .social-link {
     margin: 5px; }
@@ -3115,6 +3106,15 @@ Blog Box
          -o-transform: rotate(360deg);
             transform: rotate(360deg); }
 
+/*
+ * @package themecentury
+ * @subpackage hamroclass
+ *
+ * @since 1.0.0
+ */
+.instagram-image-details figurecaption {
+  display: none; }
+
 input, button, select, textarea {
   max-width: 100%; }
 
@@ -4224,7 +4224,7 @@ Tags: grid-layout, one-column, two-columns, three-columns, four-columns, left-si
     text-transform: uppercase;
     font-size: 2rem;
     color: #222; }
-  .skin_one .site-title-centered .header-image .site-title a {
+  .skin_one .site-header-wrap .header-image .site-title a {
     color: #fff;
     text-transform: uppercase !important; }
   .skin_one aside.sidebar .widget {

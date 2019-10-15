@@ -5,12 +5,8 @@
  * @package Lekh
  * @since Lekh 1.0
  */
-$header_template = sanitize_file_name(get_theme_mod('header_layout', 'header-layout1'));
-$branding_class = ' left-brand';
-if ($header_template == "header-layout1") {
-    $branding_class = ' center-brand';
-}
-
+$branding_alignment = lekh_branding_alignment();
+$branding_class = $branding_alignment.'-brand';
 $show_logo_on_menu = get_theme_mod('logo_on_navenu', 0);
 $logo_class = ' logo-exist';
 if ($show_logo_on_menu) {

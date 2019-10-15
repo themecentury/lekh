@@ -491,7 +491,7 @@
 
 /* Site Title Centered */
 
-.site-title-centered {
+.site-header-wrap{
 	.site-branding {
 		position: relative;
 		@media(min-width: 960px) {
@@ -916,18 +916,7 @@ body.mobile-sidebar-active:before {
 	transform: translate(0px, -6px) rotate(45deg);
 }
 
-.header-layout-2,
-.header-layout2{
-	.site-branding {
-		float: left;
-		p, a {
-			text-align: left;
-		}
-	}
-}
-
-.lekh-social-icons-wrapper {
-	text-align: center;
+.lekh-social-icons-wrapper{
 	padding: 10px 5px;
 	.social-link {
 		margin: 5px;
