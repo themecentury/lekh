@@ -102,7 +102,7 @@ $wp_customize->add_setting(
 $wp_customize->add_control( 
 	'blog_show_cta', 
 	array(
-		'label'   => esc_html__( 'Show Blocks?', 'lekh' ),
+		'label'   => esc_html__( 'Show Image Blocks?', 'lekh' ),
 		'section' => 'lekh_index_page',
 		'type'    => 'checkbox',
 	) 
