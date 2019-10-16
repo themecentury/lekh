@@ -97,7 +97,7 @@ $wp_customize->add_control(
 $wp_customize->add_setting( 
  	'header_branding_alignment', 
  	array(
- 		'default'           => 'left',
+ 		'default'           => 'center',
  		'sanitize_callback' => 'sanitize_text_field',
  	)
 );

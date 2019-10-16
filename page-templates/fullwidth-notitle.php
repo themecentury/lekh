@@ -5,7 +5,6 @@
  * @package Lekh
  * @since Lekh 1.0
  */
-
 get_header(); ?>
 
 <?php if ( have_posts() ) : ?>

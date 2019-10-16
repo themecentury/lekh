@@ -8,22 +8,20 @@
 $branding_alignment = lekh_branding_alignment();
 $branding_class = $branding_alignment.'-brand';
 $show_logo_on_menu = get_theme_mod('logo_on_navenu', 0);
-$logo_class = ' logo-exist';
-if ($show_logo_on_menu) {
-    $logo_class = '';
+if(!$show_logo_on_menu){
+    $branding_class.= ' logo-exist';
 }
 ?>
-<div class="site-branding <?php echo $logo_class; ?>">
+<div class="site-branding <?php echo esc_attr($branding_class); ?>">
     <div class="container">
-        <div class="<?php echo $branding_class; ?>">
+        <div class="logo-brand-wrap">
             <?php
             if (!$show_logo_on_menu) {
                 lekh_custom_logo();
-
                 $description = get_bloginfo('description', 'display');
-                if ($description || is_customize_preview()) :
+                if ($description || is_customize_preview()):
                     ?>
-                    <p class="site-description"><?php echo $description; ?></p>
+                    <p class="site-description"><?php echo esc_html($description); ?></p>
                     <?php
                 endif;
             }
@@ -31,7 +29,9 @@ if ($show_logo_on_menu) {
         </div>
         <?php
         if (is_active_sidebar('header-1')):
+            ?><div class="header-ads-wrapper"><?php
             dynamic_sidebar('header-1');
+            ?></div><?php
         else:
             $show_on_branding = get_theme_mod('show_on_branding', 'disable');
             if ($show_on_branding == 'enable') {

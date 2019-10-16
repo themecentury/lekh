@@ -17,6 +17,24 @@
 }
 .site-branding {
 	padding: 30px 0;
+	&.center-brand{
+		.logo-brand-wrap{
+			text-align:center;
+		}
+		.lekh-social-icons-wrapper{
+			text-align:center;
+		}
+	}
+	&.left-brand{
+		.logo-brand-wrap,
+		.lekh-social-icons-wrapper{
+			text-align:left;
+		}
+		.site-description{
+			max-width:100%;
+			padding: 0 10px;
+		}
+	}
 }
 
 .site-header {
@@ -499,7 +517,6 @@
 		}
 	}
 	.site-title {
-		text-align: center;
 		margin: auto;
 		padding: 0 10px;
 		@media(min-width: 960px) {
@@ -510,7 +527,6 @@
 		max-width: 760px;
 		margin: 10px auto 0;
 		padding: 0 20px;
-		text-align: center;
 		font-size: 14px;
 		text-transform: uppercase;
 	}

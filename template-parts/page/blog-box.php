@@ -13,12 +13,12 @@
         <div class="row">
             <?php
            wp_reset_postdata();
+           wp_reset_query();
             $args = array(
+                'paged'=>1,
                 'post_type' => 'post',
                 'posts_per_page' => 3,
                 'nopaging' => false,
-                'paged'=>1,
-                'posts_per_archive_page'=>3,
                 'posts_status' => 'publish',
             );
             $blog_result = new WP_Query($args);
@@ -43,6 +43,7 @@
                 endwhile;
             endif;
             wp_reset_query();
+            wp_reset_postdata();
             ?>
             <div class="clear"></div>
         </div>

@@ -27,9 +27,8 @@
     padding: 0 0 9px;
     border-bottom: 1px solid #f2f2f2;
     &:hover {
-
         color: $secondary_color;
-        a {
+        &>a{
             color: $secondary_color;
         }
     }
@@ -218,6 +217,7 @@ Icons
             font-size: 14px;
             font-size: inherit;
             text-rendering: auto;
+            display:inline-block;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
             padding-right: 5px;
@@ -226,7 +226,7 @@ Icons
 }
 
 .widget_product_categories,
-.widget_categories {
+.widget_categories{
     li {
         &:before {
             content: "\f07b";
@@ -262,7 +262,7 @@ Icons
 .widget_meta {
     li {
         &:before {
-            content: "\f2de";
+            content: "\f105";
         }
     }
 }

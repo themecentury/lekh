@@ -1,0 +1,13 @@
+/*
+ * @package themecentury
+ * @subpackage lekh
+ */
+
+.widget_recent_entries li::before,
+.widget_pages li::before{
+	content: "\f100";
+}
+
+.widget_meta li::before{
+	content: "\f104";
+}

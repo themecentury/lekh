@@ -5,6 +5,12 @@
  * @package Lekh
  * @since Lekh 1.0
  */
+
+$enable_branding = get_theme_mod( 'header_branding_option', 'enable' );
+if( $enable_branding != 'enable' ){
+    return;
+}
+
 if (get_header_image()) {
 	$is_header_parallax = absint( get_theme_mod( 'show_headerimage_parallax', 0 ) ) ? 1 : 0;
 	$header_image_parallax = ' data-parallax="scroll" data-image-src="'.esc_url( get_header_image() ).'" ';

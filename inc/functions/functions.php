@@ -216,14 +216,19 @@ function lekh_get_featured_posts_ids() {
  */
 function lekh_custom_logo() {
 
+    $tagname = 'span';
+    if(is_home()){
+        $tagname = 'h1';
+    }
+
     if (function_exists('the_custom_logo') && has_custom_logo()) {
         ?>
-        <h1 class="site-title site-logo"><?php the_custom_logo(); ?></h1>
+        <<?php echo esc_attr($tagname); ?> class="site-title site-logo"><?php the_custom_logo(); ?></<?php echo esc_attr($tagname); ?>>
         <?php 
     } else { ?>
-        <h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>"
+        <<?php echo esc_attr($tagname); ?> class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>"
             rel="home"><?php bloginfo('name'); ?></a>
-        </h1>
+        </<?php echo esc_attr($tagname); ?>>
         <?php
     }
 

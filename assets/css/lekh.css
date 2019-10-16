@@ -775,6 +775,16 @@ figure {
 
 .site-branding {
   padding: 30px 0; }
+  .site-branding.center-brand .logo-brand-wrap {
+    text-align: center; }
+  .site-branding.center-brand .lekh-social-icons-wrapper {
+    text-align: center; }
+  .site-branding.left-brand .logo-brand-wrap,
+  .site-branding.left-brand .lekh-social-icons-wrapper {
+    text-align: left; }
+  .site-branding.left-brand .site-description {
+    max-width: 100%;
+    padding: 0 10px; }
 
 .site-header {
   margin-bottom: 30px; }
@@ -1171,7 +1181,6 @@ figure {
       padding: 30px 0; } }
 
 .site-header-wrap .site-title {
-  text-align: center;
   margin: auto;
   padding: 0 10px; }
   @media (min-width: 960px) {
@@ -1182,7 +1191,6 @@ figure {
   max-width: 760px;
   margin: 10px auto 0;
   padding: 0 20px;
-  text-align: center;
   font-size: 14px;
   text-transform: uppercase; }
 
@@ -2566,7 +2574,7 @@ body.home .content-area, body.archive .content-area, body.search .content-area {
   border-bottom: 1px solid #f2f2f2; }
   .widget-area ul li:hover {
     color: #ff8400; }
-    .widget-area ul li:hover a {
+    .widget-area ul li:hover > a {
       color: #ff8400; }
 
 .widget-area ul li a {
@@ -2722,6 +2730,7 @@ Icons
   font-size: 14px;
   font-size: inherit;
   text-rendering: auto;
+  display: inline-block;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding-right: 5px; }
@@ -2740,7 +2749,7 @@ Icons
   content: "\f101"; }
 
 .widget_meta li:before {
-  content: "\f2de"; }
+  content: "\f105"; }
 
 .widget_recent_comments li:before {
   content: "\f0e5"; }

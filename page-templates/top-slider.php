@@ -7,7 +7,7 @@
  */
 
 get_header();
-the_widget( 'Lekh_Slider' );
+the_widget( 'Lekh_Slider_Widget' );
 //get_template_part('template-parts/post/post', 'slider');
 if (have_posts()) :
     if (get_theme_mod('page_style', 'fimg-classic') == 'fimg-fullwidth') :

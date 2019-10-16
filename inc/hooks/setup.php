@@ -84,11 +84,8 @@ function lekh_scripts() {
 
     wp_enqueue_style('owl-carousel', get_template_directory_uri() . '/assets/lib/owl.carousel/css/owl.carousel.min.css', array(), '4.7');
 
-    if (is_rtl()):
-        wp_enqueue_style('lekh-default-style-rtl', get_template_directory_uri() . '/assets/css/lekh-rtl.css', array(), '1.0.0');
-    else:
-        wp_enqueue_style('lekh-default-style', get_template_directory_uri() . '/assets/css/lekh.css', array(), '1.0.0');
-    endif;
+    wp_enqueue_style('lekh-default-style', get_template_directory_uri() . '/assets/css/lekh.min.css', array(), '1.0.0');
+    wp_style_add_data( 'lekh-default-style', 'rtl', 'replace' );
 
     // Theme stylesheet
     wp_enqueue_style('lekh-style', get_stylesheet_uri(), array(), '1.0.0');
