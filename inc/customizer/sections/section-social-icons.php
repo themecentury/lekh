@@ -9,7 +9,7 @@ $wp_customize->add_section(
     array(
         'title' => esc_html__('Social Icons', 'lekh'),
         'panel' => 'lekh_sections_panel',
-        'priority' => 5,
+        'priority' => 10,
     )
 );
 
