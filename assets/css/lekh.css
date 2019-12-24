@@ -1306,9 +1306,7 @@ figure {
   display: block; }
 
 .main-navigation ul li.menu-item-focused > ul,
-.main-navigation ul li:hover > ul,
-.main-navigation ul li:focus > ul,
-.main-navigation ul li.focus > ul {
+.main-navigation ul li:hover > ul {
   opacity: 1;
   visibility: visible; }
 
@@ -2495,7 +2493,6 @@ body.home .content-area, body.archive .content-area, body.search .content-area {
 
 .site-footer {
   margin: 20px auto 0;
-  border-top: 1px solid #eee;
   background-color: #131119; }
 
 .footer-copy {
@@ -3244,10 +3241,6 @@ textarea {
           box-shadow: 0 1px 12px rgba(0, 0, 0, 0.05);
   border-color: #ddd; }
 
-/* Remove Safari's default styling from the inputs. */
-input, textarea {
-  -webkit-appearance: none; }
-
 /* Search Form */
 .search-form {
   position: relative; }
@@ -3312,6 +3305,12 @@ div.wpcf7-mail-sent-ok {
     font-weight: 700;
     font-size: 0.875em;
     text-transform: uppercase; }
+  .comment-form input[type="checkbox"], .comment-form input[type="radio"] {
+    height: 15px;
+    width: 15px;
+    display: inline-block; }
+    .comment-form input[type="checkbox"] + label, .comment-form input[type="radio"] + label {
+      display: inline-block; }
   .comment-form .form-submit {
     margin-bottom: 0; }
 
@@ -3816,7 +3815,7 @@ object {
             font-feature-settings: 'liga';
     content: "\f107"; }
   .main-navigation > ul > li:hover > ul,
-  .main-navigation > ul > li.focus > ul {
+  .main-navigation > ul > li.menu-item-focused > ul {
     top: 40px; }
   .main-navigation ul ul {
     display: block;

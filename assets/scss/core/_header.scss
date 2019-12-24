@@ -699,9 +699,7 @@
 	display: block;
 }
 .main-navigation ul li.menu-item-focused > ul,
-.main-navigation ul li:hover > ul,
-.main-navigation ul li:focus > ul,
-.main-navigation ul li.focus > ul {
+.main-navigation ul li:hover > ul{
 	opacity: 1;
 	visibility: visible;
 }

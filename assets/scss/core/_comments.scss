@@ -12,6 +12,14 @@
         font-size: 0.875em;
         text-transform: uppercase;
     }
+    input[type="checkbox"], input[type="radio"]{
+        height:15px;
+        width:15px;
+        display:inline-block;
+        &+label{
+            display:inline-block;
+        }
+    }
     .form-submit {
         margin-bottom: 0;
     }

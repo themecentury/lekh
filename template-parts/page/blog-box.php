@@ -33,10 +33,15 @@ $noimage_height = ($noimage_height<20 || $noimage_height>150) ? 100 : $noimage_h
             $blog_result = new WP_Query($args);
             echo '<div style="clear:both;"></div>';
             if ($blog_result->have_posts()):
+                $count_index = 0;
                 while ($blog_result->have_posts()):
                     $blog_result->the_post();
                     $thumbanil_class = (has_post_thumbnail()) ? 'has-thumbnail' : 'no-thumbnail';
                     $padding_top = (has_post_thumbnail()) ? 0 : $noimage_height;
+                    $count_index++;
+                    if($count_index>=$posts_per_page){
+                        break;
+                    }
                     ?>
                     <div class="col-<?php echo esc_attr($large_col); ?> col-sm-12 col-md-<?php echo esc_attr($medium_col); ?>">
                         <div class="innerbox-wraper <?php echo esc_attr($thumbanil_class); ?>" style="padding-top:<?php echo esc_attr($padding_top); ?>%;">
