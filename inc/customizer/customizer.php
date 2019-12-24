@@ -119,15 +119,16 @@ function lekh_add_styles() {
 
     // Footer Widget Area Background Color
     if ( $footer_background != '' ) {
-        $custom_styles .= ".site-footer .widget-area {background-color: {$footer_background};}";
+        $custom_styles .= ".site-footer .footer-main-area{background-color: {$footer_background};}";
 
         if ( lekh_get_brightness( $footer_background ) > 155 ) {
             $custom_styles .= "
-            .site-footer .widget-area  {
-            color: rgba(0,0,0,.7);
+            .site-footer .footer-main-area{
+                color: rgba(0,0,0,.7);
             }
             .site-footer .widget-title,
-            .site-footer .widget a, .site-footer .widget a:hover {
+            .site-footer .widget a, 
+            .site-footer .widget a:hover {
             color: rgba(0,0,0,.8);
             }
             .site-footer .widget-area ul li {

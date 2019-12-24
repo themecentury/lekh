@@ -1,6 +1,6 @@
 <?php
 /*
- *  Branding Section
+ *  Single Post Section
  */
 $wp_customize->add_section( 
 	'lekh_single_post', 

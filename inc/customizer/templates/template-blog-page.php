@@ -17,7 +17,7 @@ $wp_customize->add_section(
 $wp_customize->add_setting( 
 	'enable_breadcrumbs_index', 
 	array(
-		'default'           => 1,
+		'default'           => 0,
 		'sanitize_callback' => 'absint',
 	)
 );

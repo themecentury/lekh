@@ -214,3 +214,18 @@ if (!function_exists('centurylib_faicon_sizes')){
 	}
 
 }
+
+
+if (!function_exists('centurylib_is_json')){
+	/**
+	 * Function to check string is valid json or not
+	 * @since 1.0.0
+	 * @return boolean
+	 */
+	function centurylib_is_json( $raw_json ){
+		return ((is_string($raw_json) &&
+            (is_object(json_decode($raw_json)) ||
+            is_array(json_decode($raw_json))))) ? true : false;
+	}
+
+}

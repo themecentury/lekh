@@ -14,7 +14,7 @@ if ( ! function_exists( 'centurylib_sanitize_number' ) ) :
 		$centurylib_sanitize_text = sanitize_text_field( $centurylib_input );
 
 		// If the input is an number, return it; otherwise, return the default
-		return ( is_numeric( $centurylib_sanitize_text ) ? $centurylib_sanitize_text : $centurylib_setting->default );
+		return ( is_numeric( $centurylib_sanitize_text ) ) ? $centurylib_sanitize_text : absint($centurylib_sanitize_text);
 	}
 endif;
 

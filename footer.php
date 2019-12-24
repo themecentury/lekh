@@ -15,13 +15,16 @@
 </div><!-- #content -->
 <footer id="colophon" class="site-footer" role="contentinfo">
 	<?php
+
+	do_action('lekh_before_inner_footer' );
+
 	$parallax_footer = get_theme_mod('lekh_parallax_footer');
 	if($parallax_footer) { ?>
 		<div class="parallax" style='background-image: url("<?php echo esc_url($parallax_footer); ?>"); '>
 			<div class="parallax-content"><?php  
 	} ?>
 	<?php if ( is_active_sidebar( 'footer-1' ) || is_active_sidebar( 'footer-2' ) || is_active_sidebar( 'footer-3' ) || is_active_sidebar( 'footer-4' ) ) : ?>
-	<div class="widget-area" role="complementary" style="<?php echo ($parallax_footer)? 'background-color:transparent !important;': ''; ?>">
+	<div class="widget-area footer-main-area" role="complementary" style="<?php echo ($parallax_footer)? 'background-color:transparent !important;': ''; ?>">
 			<div class="container">
 				<div class="row">
 					<div class="col-3 col-md-4" id="footer-area-1">
@@ -53,11 +56,16 @@
 			<div class="row">
 				<div class="col-12 col-sm-12">
 					<div class="site-credits"><?php lekh_credits(); ?></div>
-					<div class="site-info">
-						<a href="<?php echo esc_url( esc_html__( 'https://wordpress.org/', 'lekh' ) ); ?>"><?php printf( esc_html__( 'Powered by %s', 'lekh' ), 'WordPress' ); ?></a>
-						<span class="sep"> - </span>
-						<a href="<?php echo esc_url( esc_html__( 'http://themecentury.com', 'lekh' ) ); ?>"><?php printf( esc_html__( 'Lekh by %s', 'lekh' ), 'ThemeCentury' ); ?></a>
-					</div><!-- .site-info -->
+					<?php
+					$remove_link = apply_filters( 'lekh_remove_footer_link', false );
+					if(!$remove_link):
+						?>
+						<div class="site-info">
+							<a href="<?php echo esc_url( esc_html__( 'https://wordpress.org/', 'lekh' ) ); ?>"><?php printf( esc_html__( 'Powered by %s', 'lekh' ), 'WordPress' ); ?></a>
+							<span class="sep"> - </span>
+							<a href="<?php echo esc_url( esc_html__( 'http://themecentury.com', 'lekh' ) ); ?>"><?php printf( esc_html__( 'Lekh by %s', 'lekh' ), 'ThemeCentury' ); ?></a>
+						</div><!-- .site-info -->
+					<?php endif; ?>
 				</div>
 			</div>
 		</div><!-- .container -->
@@ -69,7 +77,13 @@ if($parallax_footer){ ?>
 	} ?>
 </footer><!-- #colophon -->
 </div><!-- #page -->
-<?php wp_footer(); ?>
+<?php 
+
+do_action( 'lekh_after_page' );
+
+wp_footer(); 
+
+?>
 </body>
 </html>
 

@@ -45,7 +45,7 @@ if (!class_exists('Lekh_Author_Widget')) {
                                     'tcy_widget_field_name'     => 'title',
                                     'tcy_widget_field_wraper'   => 'title',
                                     'tcy_widget_field_title'    => esc_html__( 'Title', 'lekh' ),
-                                    'tcy_widget_field_default'  => '',
+                                    'tcy_widget_field_default'  => esc_html__('Author Info', 'lekh'),
                                     'tcy_widget_field_type'     => 'text',
                                 ),
                                 'title_target'    => array(
@@ -87,14 +87,14 @@ if (!class_exists('Lekh_Author_Widget')) {
                                     'tcy_widget_field_name'     => 'author_designation',
                                     'tcy_widget_field_wraper'   => 'author-designation',
                                     'tcy_widget_field_title'    => esc_html__( 'Author Designation', 'lekh' ),
-                                    'tcy_widget_field_default'  => esc_html__('CEO / Co-Founder', 'lekh'),
+                                    'tcy_widget_field_default'  => esc_html__('Content Writer', 'lekh'),
                                     'tcy_widget_field_type'     => 'text',
                                 ),
                                 'show_avatar'    => array(
                                     'tcy_widget_field_name'     => 'show_avatar',
                                     'tcy_widget_field_wraper'   => 'show-avatar',
                                     'tcy_widget_field_title'    => esc_html__( 'Show Author Avatar?', 'lekh' ),
-                                    'tcy_widget_field_default'  => 0,
+                                    'tcy_widget_field_default'  => 1,
                                     'tcy_widget_field_type'     => 'checkbox',
                                     'tcy_widget_field_relation' => array(
                                         'exist' => array(
@@ -151,7 +151,7 @@ if (!class_exists('Lekh_Author_Widget')) {
                                     'tcy_widget_field_name'     => 'author_link_target',
                                     'tcy_widget_field_wraper'   => 'view-all-option',
                                     'tcy_widget_field_title'         => esc_html__( 'Author link target', 'lekh' ),
-                                    'tcy_widget_field_default'  => 'disable',
+                                    'tcy_widget_field_default'  => '_self',
                                     'tcy_widget_field_type'     => 'select',
                                     'tcy_widget_field_options'  => $lekh_link_target,
                                 ),
@@ -159,14 +159,14 @@ if (!class_exists('Lekh_Author_Widget')) {
                                     'tcy_widget_field_name'     => 'all_link_text',
                                     'tcy_widget_field_wraper'   => 'all-link-text',
                                     'tcy_widget_field_title'    => esc_html__( 'All link text', 'lekh' ),
-                                    'tcy_widget_field_default'  => '',
+                                    'tcy_widget_field_default'  => esc_html__('View All', 'lekh'),
                                     'tcy_widget_field_type'     => 'text',
                                 ),
                                 'show_social_media'=>array(
                                     'tcy_widget_field_name'     => 'show_social_media',
                                     'tcy_widget_field_wraper'   => 'show-social-media',
                                     'tcy_widget_field_title'    => esc_html__( 'Show Social Media', 'lekh' ),
-                                    'tcy_widget_field_default'  => '',
+                                    'tcy_widget_field_default'  => 1,
                                     'tcy_widget_field_type'     => 'checkbox',
                                 ),
                             )
