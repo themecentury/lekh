@@ -32,13 +32,11 @@ a {
 	background-color: transparent;
 	-webkit-text-decoration-skip: objects;
 	&:hover {
+		outline: 0;
 		text-decoration: none;
 	}
-
-	&:hover,
-	&:focus,
-	&:active {
-		outline: 0;
+	&:focus{
+		outline:1px dotted;
 	}
 }
 

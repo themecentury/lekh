@@ -22,7 +22,7 @@
 </nav>
 <?php if (get_theme_mod('show_searchform_onmenu', 1)) { ?>
 	<div class="top-search">
-		<span id="top-search-button" class="top-search-button"><i class="search-icon"></i></span>
+		<a id="top-search-button" class="top-search-button" href="JavaScript:Void(0);"><i class="search-icon"></i></a>
 		<?php get_search_form(); ?>
 	</div>
 <?php } // Search Icon 

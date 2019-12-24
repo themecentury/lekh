@@ -13,8 +13,6 @@
 
             OwlCarousel: function(){
 
-
-
             },
 
             ScrollToTop: function(){
@@ -29,20 +27,34 @@
                 }
             },
 
+            Accessibility: function () {
+                var main_menu_container = $('#site-navigation');
+                main_menu_container.find('li.menu-item').focusin(function () {
+                    if (!$(this).hasClass('menu-item-focused')) {
+                        $(this).addClass('menu-item-focused');
+                    }
+                });
+                main_menu_container.find('li.menu-item').focusout(function () {
+                    $(this).removeClass('menu-item-focused');
+                });
+            },
+
         },
 
         Events: function(){
+
+            var snipits = lekh.snipits;
+            snipits.Accessibility();
+
+            var go_to_top = snipits.ScrollToTop;
+            $( '#button_to_top' ).on( 'click', go_to_top );
 
         },
 
         Ready: function(){
             
-            var __this = lekh;
-            var snipits = __this.snipits;
-
-            var go_to_top = snipits.ScrollToTop;
-            $('#button_to_top').on('click', go_to_top);
-
+            lekh.Events();
+            
         },
 
         Load: function(){},

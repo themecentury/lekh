@@ -665,6 +665,7 @@
 
 .main-navigation .main-menu > li:hover > a,
 .main-navigation .main-menu > li:focus > a,
+.main-navigation .main-menu > .menu-item-focused > a,
 .main-navigation .main-menu > .current_page_item > a,
 .main-navigation .main-menu > .current-menu-item > a,
 .main-navigation .main-menu > .current-menu-ancestor > a {
@@ -674,6 +675,7 @@
 
 .main-navigation .sub-menu > li:hover > a,
 .main-navigation .sub-menu > li:focus > a,
+.main-navigation .sub-menu > .menu-item-focused > a,
 .main-navigation .sub-menu > .current-menu-item > a,
 .main-navigation .sub-menu > .current-menu-ancestor > a {
 	color: #fff;
@@ -696,7 +698,7 @@
 .main-navigation ul ul a {
 	display: block;
 }
-
+.main-navigation ul li.menu-item-focused > ul,
 .main-navigation ul li:hover > ul,
 .main-navigation ul li:focus > ul,
 .main-navigation ul li.focus > ul {

@@ -34,7 +34,6 @@ input[type="button"]:active,
 input[type="reset"]:active,
 input[type="submit"]:active {
     border: 0;
-    outline: 0;
 }
 
 input[type="text"],
@@ -80,7 +79,6 @@ input[type="datetime-local"]:focus,
 input[type="color"]:focus,
 textarea:focus {
     color: #222;
-    outline: none;
 }
 
 input[type="text"],
