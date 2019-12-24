@@ -847,6 +847,8 @@ body {
 /* Archives and Search */
 
 .page-header {
+    padding:15px;
+    background:#fff;
     margin-bottom: 30px;
 }
 
@@ -903,23 +905,16 @@ aside.sidebar {
     }
 }
 
-.site-content {
-
-}
-
 .content-area {
     background: #fff;
-    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
     padding: 10px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 }
 
 body.home, body.archive, body.search {
-    .content-area {
+    .content-area{
+        padding:0px;
         background: none;
-        -webkit-box-shadow: none;
-        -moz-box-shadow: none;
         box-shadow: none;
     }
 }
