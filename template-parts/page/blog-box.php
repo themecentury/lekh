@@ -39,7 +39,7 @@ $noimage_height = ($noimage_height<20 || $noimage_height>150) ? 100 : $noimage_h
                     $thumbanil_class = (has_post_thumbnail()) ? 'has-thumbnail' : 'no-thumbnail';
                     $padding_top = (has_post_thumbnail()) ? 0 : $noimage_height;
                     $count_index++;
-                    if($count_index>=$posts_per_page){
+                    if($count_index>$posts_per_page){
                         break;
                     }
                     ?>
