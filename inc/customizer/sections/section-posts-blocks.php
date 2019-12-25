@@ -147,13 +147,13 @@ $wp_customize->add_control(
 	'lekh_block_noimage_height', 
 	array(
 		'type'		=> 'number',
-		'label'     => esc_html__('Noimage block height(%)', 'lekh'),
+		'label'     => esc_html__('NoImage block height(%)', 'lekh'),
 		'section'   => 'lekh_posts_blocks_section',
 		'priority'  => 60,
 		'input_attrs' => array(
 			'min' => 20,
 			'max' => 150,
 		),
-		'description'=> esc_html__( 'Please enter the percentage value for height. This percentage is relative to block width.(min value is 20 and maximum value is 150)')
+		'description'=> esc_html__( 'Please enter the percentage value for height. This percentage is relative to block width.(min value is 20 and maximum value is 150)', 'lekh')
 	)
 );
