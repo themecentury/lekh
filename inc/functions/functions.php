@@ -44,9 +44,11 @@ if (!function_exists('lekh_fonts_url')) :
             $subsets .= ',vietnamese';
         }
 
-        if ($fonts) {
+        $font_details = apply_filters( 'lekh_google_fonts_details', $fonts );
+
+        if ($font_details) {
             $fonts_url = add_query_arg(array(
-                'family' => urlencode(implode('|', $fonts)),
+                'family' => urlencode(implode('|', $font_details)),
                 'subset' => urlencode($subsets),
                     ), '//fonts.googleapis.com/css');
         }
