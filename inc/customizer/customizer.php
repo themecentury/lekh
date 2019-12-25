@@ -131,7 +131,7 @@ function lekh_add_styles() {
             .site-footer .widget a:hover {
             color: rgba(0,0,0,.8);
             }
-            .site-footer .widget-area ul li {
+            .site-footer .footer-main-area ul li {
             border-bottom-color: rgba(0,0,0,.05);
             }
             .site-footer .widget_tag_cloud a {
