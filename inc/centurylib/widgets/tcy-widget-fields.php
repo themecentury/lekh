@@ -35,30 +35,30 @@ function tcy_widgets_updated_field_value( $widget_field, $new_field_value ){
 	switch ( $tcy_widget_field_type ) {
 		// Allow only integers in number fields
 		case 'number':
-			return centurylib_sanitize_number( $new_field_value, $widget_field );
-			break;
+		return centurylib_sanitize_number( $new_field_value, $widget_field );
+		break;
 		// Allow some tags in textareas
 		case 'textarea':
-			return centurylib_sanitize_textarea($new_field_value);
-			break;
+		return centurylib_sanitize_textarea($new_field_value);
+		break;
 		// No allowed tags for all other fields
 		case 'url':
-			return esc_url_raw( $new_field_value );
-			break;
+		return esc_url_raw( $new_field_value );
+		break;
 		case 'multitermlist':
-			return centurylib_sanitize_multitermlist($new_field_value);
-			break;
+		return centurylib_sanitize_multitermlist($new_field_value);
+		break;
 		case 'multiselect':
-			return centurylib_sanitize_multiselect($new_field_value);
-			break;
+		return centurylib_sanitize_multiselect($new_field_value);
+		break;
 		case 'accordion':
-			return centurylib_sanitize_accordion($new_field_value);
-			break;
+		return centurylib_sanitize_accordion($new_field_value);
+		break;
 		case 'repeater':
-			return centurylib_sanitize_repeater($widget_field, $new_field_value );
-			break;
+		return centurylib_sanitize_repeater($widget_field, $new_field_value );
+		break;
 		default:
-			return wp_kses_post( sanitize_text_field( $new_field_value ) );
+		return wp_kses_post( sanitize_text_field( $new_field_value ) );
 
 	}
 }

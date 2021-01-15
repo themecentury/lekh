@@ -1,10 +1,10 @@
 === Lekh ===
 Contributors:       themecentury
 Requires at least:  WordPress 4.0
-Tested up to:       WordPress 5.2.2
+Tested up to:       5.6
 Requires PHP:       5.3
-Version:            1.0.4
-Stable tag:         1.0.4
+Version:            1.0.5
+Stable tag:         1.0.5
 License:            GPLv3 or later
 License URI:        http://www.gnu.org/licenses/gpl-3.0.html
 Tags:               grid-layout, one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header,  custom-logo, custom-menu, editor-style, featured-images, footer-widgets, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, blog, education, news
@@ -50,39 +50,39 @@ https://github.com/pixelcog/parallax.js - MIT License
 == Changelog ==
 
 = 1.0.4 - 2019/12/25 =
-    * Fixed: Minor css issue
-    * Added: Keyword navigation added
-    * Added: add more options for related section
+* Fixed: Minor css issue
+* Added: Keyword navigation added
+* Added: add more options for related section
 
 = 1.0.3 - 2019/07/04 =
-    * Fixed: Modify all field.
-    * Added: Breadcrumbs Features added
+* Fixed: Modify all field.
+* Added: Breadcrumbs Features added
 
 = 1.0.2 - 2019/03/30 =
-    * Fixed: Fixed Theme Name Issues
-    * Fixed: WordPress Capital Letter Issue Fixed
-    * Remove: Remove Single - Gallery File
-    * Added: General and Image Settings added
-    * Optimized: Search Form and Menu Search Icons Design Optimized
+* Fixed: Fixed Theme Name Issues
+* Fixed: WordPress Capital Letter Issue Fixed
+* Remove: Remove Single - Gallery File
+* Added: General and Image Settings added
+* Optimized: Search Form and Menu Search Icons Design Optimized
 
 = 1.0.1 - 2019/03/22 =
-    * Fixed: Readme file issue fixed
+* Fixed: Readme file issue fixed
 
 = 1.0.0 - 2019/02/21 =
-    * Initial release
+* Initial release
 
 == Upgrade Notice ==
 
 = 1.0.3 =
-    * Fixed: Modify all field.
-    * Added: Breadcrumbs Features added
+* Fixed: Modify all field.
+* Added: Breadcrumbs Features added
 
 = 1.0.2 - 2019/03/30 =
-    * Fixed: Fixed Theme Name Issues
-    * Fixed: WordPress Capital Letter Issue Fixed
-    * Remove: Remove Single - Gallery File
-    * Added: General and Image Settings added
-    * Optimized: Search Form and Menu Search Icons Design Optimized
+* Fixed: Fixed Theme Name Issues
+* Fixed: WordPress Capital Letter Issue Fixed
+* Remove: Remove Single - Gallery File
+* Added: General and Image Settings added
+* Optimized: Search Form and Menu Search Icons Design Optimized
 
 = 1.0.1 =
 *  Fixed: Readme file issue fixed.

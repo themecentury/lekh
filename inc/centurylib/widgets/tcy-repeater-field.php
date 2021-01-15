@@ -17,7 +17,7 @@ $tcy_repeater_main_key = $tcy_widget_field_name;
 	<div class="tcy-repeater">
 		<?php
 		$repeater_count = 0;
-		if( count( $tcy_widget_field_value ) > 0 && is_array( $tcy_widget_field_value ) ){
+		if( is_array( $tcy_widget_field_value )  && ( $tcy_widget_field_value ) > 0 ){
 			foreach ($tcy_widget_field_value as $repeater_key=>$repeater_details){
 				?>
 				<div class="tcy-widget-repeater-table">
