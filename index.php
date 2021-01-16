@@ -44,21 +44,21 @@ if (have_posts()) :
             <?php
             /* Start the Loop */
             while (have_posts()) : the_post();
-             ?>
-             <div class="post-wrapper <?php echo esc_attr($post_column); ?>">
-                <?php get_template_part('template-parts/post/content', $post_template); ?>
-            </div>
-        <?php endwhile; ?>
-    </section>
-    <div class="loading-image">
-        <img src="<?php echo esc_attr(get_template_directory_uri() . '/assets/img/loading.gif'); ?>" title="<?php esc_html_e('Loading Image', 'lekh'); ?>" alt="<?php esc_html_e('Loading Image', 'lekh'); ?>" height="50" width="50" />
-    </div>
-    <?php
-    if (!$blog_lazy_loading):
-        the_posts_navigation();
-    endif;
-    ?>
-</main><!-- #main -->
+                ?>
+                <div class="post-wrapper <?php echo esc_attr($post_column); ?>">
+                    <?php get_template_part('template-parts/post/content', $post_template); ?>
+                </div>
+            <?php endwhile; ?>
+        </section>
+        <div class="loading-image">
+            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/loading.gif'); ?>" title="<?php esc_attr_e('Loading Image', 'lekh'); ?>" alt="<?php esc_attr_e('Loading Image', 'lekh'); ?>" height="50" width="50" />
+        </div>
+        <?php
+        if (!$blog_lazy_loading):
+            the_posts_navigation();
+        endif;
+        ?>
+    </main><!-- #main -->
 </div><!-- #primary -->
 
 <?php else : ?>
