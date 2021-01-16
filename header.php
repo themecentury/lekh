@@ -32,7 +32,7 @@
 		<?php 
 		$backtotop = get_theme_mod('back_to_top_button');
 		if($backtotop){ ?>
-			<button id="button_to_top" title="<?php esc_html_e('Go to top', 'lekh'); ?>"><i class="fa fa-angle-up"></i></button><?php 
+			<button id="button_to_top" title="<?php esc_attr_e('Go to top', 'lekh'); ?>"><i class="fa fa-angle-up"></i></button><?php 
 		} ?>
 		<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'lekh' ); ?></a>
 		<?php

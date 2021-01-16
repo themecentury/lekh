@@ -28,7 +28,7 @@ $tcy_repeater_main_key = $tcy_widget_field_name;
 							</button>
 						</div>
 						<div class="tcy-repeater-title">
-							<h3><?php echo esc_attr($tcy_repeater_row_title); ?><span class="tcy-repeater-inner-title"></span></h3>
+							<h3><?php echo esc_html($tcy_repeater_row_title); ?><span class="tcy-repeater-inner-title"></span></h3>
 						</div>
 					</div>
 					<div class='tcy-repeater-inside hidden'>
@@ -65,7 +65,7 @@ $tcy_repeater_main_key = $tcy_widget_field_name;
 						</button>
 					</div>
 					<div class="tcy-repeater-title">
-						<h3><?php echo esc_attr($tcy_repeater_row_title); ?><span class="tcy-repeater-inner-title"></span></h3>
+						<h3><?php echo esc_html($tcy_repeater_row_title); ?><span class="tcy-repeater-inner-title"></span></h3>
 					</div>
 				</div>
 				<div class='tcy-repeater-inside hidden'>

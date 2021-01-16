@@ -2906,7 +2906,6 @@ Blog Box
 .single_slider {
   color: #fff;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
@@ -2920,14 +2919,12 @@ Blog Box
 
 .owl-stage-outer .owl-stage {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -moz-box;
   display: -ms-flexbox;
   display: flex; }
 
 .owl-stage-outer .single_slider:nth-child(n+1) {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -moz-box;
   display: -ms-flexbox;
   display: flex; }
@@ -3541,13 +3538,11 @@ object {
   /* Grid Posts */
   .grid-post {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -moz-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
        -moz-box-orient: vertical;
        -moz-box-direction: normal;
         -ms-flex-direction: column;
@@ -3556,13 +3551,11 @@ object {
   .grid-post .entry-header,
   .grid-post .entry-footer {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 1 auto;
        -moz-box-flex: 0;
         -ms-flex: 0 1 auto;
             flex: 0 1 auto; }
   .grid-post .entry-summary {
     -webkit-box-flex: 1;
-    -webkit-flex: 1 1 auto;
        -moz-box-flex: 1;
         -ms-flex: 1 1 auto;
             flex: 1 1 auto; }

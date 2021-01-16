@@ -116,16 +116,16 @@ class Lekh_Social_Icons_Widget extends Centurylib_Master_Widget{
                             ),
                             
                         )
-                    ),
-                ),
-            ),
-        );
+),
+),
+),
+);
 
-        $widget_fields_key = 'fields_'.$this->id_base;
-        $widgets_fields = apply_filters( $widget_fields_key, $fields );
-        return $widgets_fields;
+$widget_fields_key = 'fields_'.$this->id_base;
+$widgets_fields = apply_filters( $widget_fields_key, $fields );
+return $widgets_fields;
 
-    }
+}
 
 	/**
 	 * Display the widget
@@ -155,9 +155,9 @@ class Lekh_Social_Icons_Widget extends Centurylib_Master_Widget{
                 ?></a><?php 
             }
             echo $args['after_title'];
-		} 
-		?>
-		<div class="social-icons">
+        } 
+        ?>
+        <div class="social-icons">
             <?php
             foreach($social_icon_list as $index=>$social_media_details){
 
@@ -165,10 +165,10 @@ class Lekh_Social_Icons_Widget extends Centurylib_Master_Widget{
                 $social_media_icon = (isset($social_media_details['social_media_icon'])) ? esc_attr($social_media_details['social_media_icon']) : '';
                 $social_media_color = (isset($social_media_details['social_media_color'])) ? esc_attr($social_media_details['social_media_color']) : '';
                 ?><a 
-                title="<?php esc_html_e('Lekh Social Media Icons', 'lekh'); ?>" 
+                title="<?php esc_attr_e('Lekh Social Media Icons', 'lekh'); ?>" 
                 target="<?php echo esc_attr($social_media_target); ?>" 
                 <?php if($social_media_target){ ?>
-                href="<?php echo esc_attr($social_media_link); ?>" 
+                    href="<?php echo esc_attr($social_media_link); ?>" 
                 <?php } ?> 
                 style="background-color:<?php echo esc_attr( $social_media_color ); ?>"
                 ><i 
